@@ -1,0 +1,54 @@
+/* editor.css — точка входа для сборки бандла стилей блочного редактора
+ * (Gutenberg) через webpack.
+ *
+ * Список @import повторяет прежний набор add_editor_style() из functions.php
+ * (порядок каскада сохранён как был там). Пути — относительные от ЭТОГО
+ * файла (static/css/); раскладка по подпапкам: base/, blocks/, components/,
+ * pages/, корневой bootstrap-utils.css.
+ *
+ * Этот файл НЕ подключается в рантайме: webpack читает его, разрешает все
+ * @import и собирает минифицированный static/css/bundle-editor.css, который
+ * подключается в редактор одним add_editor_style() в functions.php.
+ *
+ * При добавлении/перестановке CSS для редактора: править список здесь →
+ * npm run build. Сборка: cd static && npm run build (см. webpack.config.mjs).
+ *
+ * Отдельно (вне бандла) подключается editor-classic.css — стили TinyMCE
+ * (.mce-content-body) через фильтр mce_css в inc/enqueues.php.
+ */
+
+@import "./base/constants.css";
+@import "./base/fonts.css";
+@import "./components/decorators.css";
+@import "./blocks/article.css";
+@import "./blocks/blockquote.css";
+@import "./blocks/components-old.css";
+@import "./blocks/components.css";
+@import "./bootstrap-utils.css";
+@import "./pages/doctors-page.css";
+@import "./blocks/ui-components.css";
+@import "./pages/banner-page.css";
+@import "./blocks/gallery.css";
+@import "./blocks/sections.css";
+@import "./blocks/block-sleep.css";
+@import "./blocks/prices.css";
+@import "./base/globals.css";
+@import "./blocks/stages.css";
+@import "./blocks/gnathology.css";
+@import "./components/case-card.css";
+@import "./components/avatar.css";
+@import "./components/doctor-card.css";
+@import "./components/prose.css";
+
+.editor-styles-wrapper {
+    background: #fff;
+}
+
+.editor-post-title {
+    font-family: var(--third-family);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+    line-height: 62.4px;
+}

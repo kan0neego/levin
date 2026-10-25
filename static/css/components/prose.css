@@ -1,0 +1,247 @@
+.prose-with-sidebar {
+    display: grid;
+    align-items: start;
+    gap: 24px;
+    grid-template-columns: minmax(10px, 1fr) clamp(276px, 20vw, 389px);
+    grid-template-areas: "main aside";
+
+    width: fit-content;
+
+    margin-block: 60px;
+    padding-left: 64px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 1660px) {
+    .prose-with-sidebar {
+        padding-left: 36px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .prose-with-sidebar {
+        grid-template-areas: "main main";
+        padding-inline: 36px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .prose-with-sidebar {
+        padding-inline: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .prose-with-sidebar {
+        margin-block: 30px;
+    }
+}
+
+.prose-with-sidebar .sidebar-r {
+    grid-area: aside;
+
+    position: sticky;
+    top: 20px;
+}
+
+.prose-with-sidebar .prose {
+    grid-area: main;
+    max-width: 1058px;
+}
+
+.is-root-container,
+.prose {
+    --text-h2: 38px;
+
+    --h1-gutter: 32px;
+    --h1-gutter-mobile: 16px;
+    --h3-gutter: 36px;
+    --h3-gutter-mobile: 24px;
+    --h-gutter: 30px;
+    --h-gutter-mobile: 24px;
+    --section-gutter: 60px;
+    --section-gutter-mobile: 32px;
+    --list-gutter: 24px;
+    --list-gutter-mobile: 24px;
+    --paragraph-gutter: 15px;
+    --paragraph-gutter-mobile: 12px;
+    --list-heading-gutter: 32px;
+    --list-heading-gutter-mobile: 24px;
+    --paragraph-content-gutter: 30px;
+    --paragraph-content-gutter-mobile: 24px;
+
+    & > *:is(b, strong) {
+        font-weight: 500;
+    }
+
+    & *:is(h1, h2, h3, h4, h5, p, ul, ol, blockquote, table) {
+        & a {
+        }
+    }
+
+    & > figure {
+        &.wp-block-video {
+            position: relative;
+        }
+
+        &:has(+ :is(figure.wp-block-image)) {
+            margin-bottom: 24px;
+        }
+    }
+
+    & > div,
+    & > section,
+    & > blockquote,
+    & > figure,
+    & > table {
+        &:not(:last-child) {
+            margin-bottom: var(--section-gutter);
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: var(--section-gutter-mobile);
+            }
+
+            &:has(
+                + :is(div, p, ul, ol, figure, blockquote, table, h3, h4, h5)
+            ) {
+                margin-bottom: var(--paragraph-content-gutter);
+
+                @media screen and (max-width: 640px) {
+                    margin-bottom: var(--paragraph-content-gutter-mobile);
+                }
+            }
+        }
+    }
+
+    & > h1 {
+        margin-bottom: var(--h1-gutter);
+
+        @media screen and (max-width: 640px) {
+            margin-bottom: var(--h1-gutter-mobile);
+        }
+    }
+
+    & > *:is(h2, h3, h4):where(& *) {
+        margin-bottom: var(--h-gutter);
+
+        @media screen and (max-width: 1240px) {
+            margin-bottom: var(--h-gutter-mobile);
+        }
+
+        &:has(+ :is(p.is-style-description.wp-block-paragraph)) {
+            margin-bottom: 15px;
+        }
+    }
+
+    & > *:is(p):where(& *):not(:last-child) {
+        margin-bottom: var(--paragraph-gutter);
+
+        @media screen and (max-width: 640px) {
+            margin-bottom: var(--paragraph-gutter-mobile);
+        }
+
+        &:has(+ :is(div, section, blockquote, table, figure)) {
+            margin-bottom: var(--paragraph-content-gutter);
+
+            @media screen and (max-width: 640px) {
+                margin-bottom: var(--paragraph-content-gutter-mobile);
+            }
+        }
+
+        &:is(.is-style-introduction) {
+            --paragraph-gutter: 60px;
+            --paragraph-content-gutter: 60px;
+
+            @media screen and (max-width: 640px) {
+                --paragraph-gutter-mobile: 30px;
+                --paragraph-content-gutter-mobile: 30px;
+            }
+        }
+    }
+
+    & > *:is(p.text_section, p.is-style-description) {
+        margin-bottom: var(--paragraph-content-gutter);
+
+        @media screen and (max-width: 640px) {
+            margin-bottom: var(--paragraph-content-gutter-mobile);
+        }
+    }
+
+    & > *:is(ul, ol):where(& *):not(:last-child) {
+        margin-bottom: var(--list-gutter);
+
+        @media screen and (max-width: 640px) {
+            margin-bottom: var(--list-gutter-mobile);
+        }
+
+        &:has(+ :is(div, section, blockquote, table, figure)) {
+            margin-bottom: var(--paragraph-content-gutter);
+
+            @media screen and (max-width: 640px) {
+                margin-bottom: var(--paragraph-content-gutter-mobile);
+            }
+        }
+    }
+
+    & > *:is(p, ul, ol):where(& *):not(:last-child) {
+        &:has(+ h5) {
+            margin-bottom: var(--list-heading-gutter);
+
+            @media screen and (max-width: 640px) {
+                margin-bottom: var(--list-heading-gutter-mobile);
+            }
+        }
+
+        &:has(+ :is(ul, ol)) {
+            margin-bottom: var(--list-gutter);
+
+            @media screen and (max-width: 640px) {
+                margin-bottom: var(--list-gutter-mobile);
+            }
+        }
+
+        &:has(+ :is(h2, .grid-section)) {
+            margin-bottom: var(--section-gutter);
+
+            @media screen and (max-width: 640px) {
+                margin-bottom: var(--section-gutter-mobile);
+            }
+        }
+
+        &:has(+ :is(h3, h4)) {
+            margin-bottom: var(--h3-gutter);
+
+            @media screen and (max-width: 640px) {
+                margin-bottom: var(--h3-gutter-mobile);
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        & > .media-slider,
+        & > .wp-block-video,
+        & > .wp-block-image {
+            width: 100vw;
+            margin: 0 -20px;
+        }
+
+        & > .media-slider > .swiper-caption,
+        & > .wp-block-image > figcaption {
+            padding-inline: 20px;
+        }
+    }
+}
+
+.is-root-container {
+    & > div {
+        &:not(:last-child) {
+            &:has(+ :is(div, figure)) {
+                margin-bottom: var(--paragraph-content-gutter);
+
+                @media screen and (max-width: 640px) {
+                    margin-bottom: var(--paragraph-content-gutter-mobile);
+                }
+            }
+        }
+    }
+}

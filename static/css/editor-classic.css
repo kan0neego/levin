@@ -1,0 +1,49 @@
+/*
+ * Стили только для классического редактора (TinyMCE).
+ * Подключается через фильтр mce_css в inc/enqueues.php.
+ *
+ * Зачем: стили списков темы привязаны к .article ul / ul.wp-block-list,
+ * а TinyMCE создаёт голый <ul> — из-за этого в модалках Lazy Blocks
+ * («Аккордеон» → Текст, «Табы» → Контент) и в мета-полях списки
+ * отображались без маркеров.
+ */
+
+.mce-content-body ul,
+.mce-content-body ol {
+    margin: 0 0 10px !important;
+    padding-left: 24px !important;
+}
+
+.mce-content-body ul {
+    list-style: disc outside !important;
+}
+
+.mce-content-body ol {
+    list-style: decimal outside !important;
+}
+
+.mce-content-body ul ul {
+    list-style: circle outside !important;
+}
+
+.mce-content-body ol ol {
+    list-style: lower-alpha outside !important;
+}
+
+.mce-content-body ul,
+.mce-content-body ol,
+.mce-content-body li {
+    /* сбрасываем протечку мобильного .../ui-components.css: @media(max-width:767px){ ul li{font-size:18px} } */
+    font-size: 14px !important;
+}
+
+.mce-content-body li {
+    margin-bottom: 4px !important;
+    padding-left: 0 !important;
+    line-height: initial !important;
+}
+
+/* Гасим кастомные точки-псевдоэлементы темы: в редакторе они позиционируются мимо */
+.mce-content-body li::before {
+    content: none !important;
+}

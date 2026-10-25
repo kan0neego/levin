@@ -1,0 +1,20 @@
+# .editorconfig — единый стиль отступов для темы sd-03-2_new (doctorlevin.ru).
+#
+# Правило проекта: отступ делается ПРОБЕЛАМИ, ширина отступа 4, табы запрещены
+# (машиночитаемые правила — в phpcs.xml, там же команды запуска линтера).
+#
+# Файл понимают VS Code (расширение EditorConfig for VS Code), PhpStorm и др.
+# Спецификация: https://editorconfig.org
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+
+# Висячие пробелы в теме пока НЕ чистим: это ~500 строк, и такая чистка
+# смешалась бы с правкой отступов. Отдельная задача.
+trim_trailing_whitespace = false

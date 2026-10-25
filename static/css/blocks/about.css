@@ -1,0 +1,390 @@
+.about-biocare {
+    position: relative;
+    color: #fff;
+    background: #252931;
+    padding-top: 28px;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare {
+        padding-top: 0;
+    }
+}
+
+.about-biocare__header {
+    z-index: 5;
+    position: absolute;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare__header {
+        left: 20px;
+        top: 37px;
+        width: 100%;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.about-biocare__title {
+    font: 400 32px var(--third-family);
+    letter-spacing: -0.01em;
+    letter-spacing: -0.01em;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare__title {
+        font-size: 36px;
+    }
+}
+
+.about-biocare__logo {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare__logo {
+        display: block;
+        width: 207px;
+        height: 90px;
+    }
+}
+
+.about-biocare .about-biocare-list {
+    bottom: 20px;
+    left: 0;
+    z-index: 2;
+}
+
+.about-biocare p {
+    margin: 0;
+}
+
+.progress-box__bg {
+    display: block;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.progress-box__line {
+    background: #fff;
+    height: 100%;
+    width: 0;
+    display: block;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+@-webkit-keyframes slide-progress {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-progress {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.about-biocare-main-slide {
+    position: relative;
+    padding-top: 78px;
+    padding-bottom: 210px;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare-main-slide {
+        padding-top: 330px;
+        padding-bottom: 280px;
+    }
+}
+
+.about-biocare-main-slide__wrap {
+    z-index: 5;
+    width: 100%;
+}
+
+.about-biocare-main-slide__arrows-wrap {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare-main-slide__arrows-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        position: absolute;
+        right: 36px;
+        bottom: 323px;
+        width: 130px;
+        z-index: 5;
+    }
+}
+
+.about-biocare-main-slide__arrow--next::after,
+.about-biocare-main-slide__arrow--prev::after {
+    color: #fff;
+    font-size: 0.5rem;
+    color: #696f7c;
+}
+
+.about-biocare-main-slide__progress-box {
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    width: 99%;
+    bottom: 175px;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare-main-slide__progress-box {
+        bottom: 280px;
+    }
+}
+
+.about-biocare-main-slide__pagination {
+    position: relative;
+    z-index: 5;
+}
+
+.about-biocare-main-slide__pagination .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.3) !important;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2px;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.about-biocare-main-slide__pagination .swiper-pagination-bullet::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.about-biocare-main-slide__pagination .swiper-pagination-bullet-active {
+    background: #ffffff80;
+    z-index: 6;
+}
+
+.about-biocare-main-slide__pagination .swiper-pagination-bullet-active::before {
+    background: #fff;
+    -webkit-animation: slide-progress 10s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+    animation: slide-progress 10s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+}
+
+.about-biocare-main-slide__pagination .swiper-pagination-bullet-active::before .swiper-paused {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.about-biocare-main-slide__content {
+    position: relative;
+    z-index: 5;
+    max-width: 1015px;
+}
+
+.about-biocare-main-slide__header {
+    margin-bottom: 5px;
+    font-family: BebasNeue, sans-serif;
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare-main-slide__header {
+        margin-bottom: 14px;
+    }
+}
+
+.about-biocare-main-slide__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 62px;
+    letter-spacing: 0.025rem;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare-main-slide__title {
+        font-size: 82px;
+    }
+}
+
+.about-biocare-main-slide__subtitle {
+    font-weight: 300;
+    font-size: 3.875rem;
+    letter-spacing: 0.025rem;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare-main-slide__subtitle {
+        font-size: 5.125rem;
+    }
+}
+
+.about-biocare-main-slide__text-box {
+    font: 300 24px/1.6 SFProDisplay, sans-serif;
+    letter-spacing: 0.01em;
+    max-width: 1015px;
+    letter-spacing: 0.01em;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare-main-slide__text-box {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+}
+
+.about-biocare-main-slide__video-box {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.about-biocare-main-slide__video-box::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#252931), to(rgba(37, 41, 49, 0.82)));
+    background: linear-gradient(180deg, #252931 0, rgba(37, 41, 49, 0.82) 100%);
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare-main-slide__video-box::before {
+        background: -webkit-gradient(linear, left top, right top, from(#252931), to(rgba(37, 41, 49, 0)));
+        background: linear-gradient(90deg, #252931 0, rgba(37, 41, 49, 0) 100%);
+    }
+}
+
+.about-biocare-main-slide__video-box img,
+.about-biocare-main-slide__video-box picture,
+.about-biocare-main-slide__video-box video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.about-biocare-list-wrap {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    padding: 0 36px;
+}
+
+@media screen and (max-width: 992px) {
+    .about-biocare-list-wrap {
+        padding: 0;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-biocare-list .about-biocare-list-slide:first-child {
+        margin-left: 20px;
+    }
+}
+
+.about-biocare-list .swiper-slide-thumb-active .about-biocare-list-slide__picture {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.about-biocare-list-slide {
+    cursor: pointer;
+    background: var(--dark);
+}
+
+.about-biocare-list-slide__picture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.about-biocare-list-slide__picture::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(78.39deg, #242931 0, rgba(36, 41, 49, 0.4) 38.2%, rgba(36, 41, 49, 0) 71.2%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.about-biocare-list-slide__picture img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.about-biocare-list-slide__text-box {
+    font: 1.375rem/140% BebasNeue, sans-serif;
+    padding: 16px;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    letter-spacing: 0.025rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (min-width: 992px) {
+    .about-biocare-list-slide__text-box {
+        font-size: 1.75rem;
+        padding: 40px;
+    }
+}
+
+.about-biocare-list-slide__title {
+    font-weight: 500;
+}
+
+.about-biocare-list-slide__subtitle {
+    font-weight: 300;
+}

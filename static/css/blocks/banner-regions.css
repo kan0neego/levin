@@ -1,0 +1,31 @@
+.banner-regions {
+    --rotate: 90deg;
+    position: static;
+
+    &::before {
+        disaply: block;
+        content: "";
+
+        max-width: 80%;
+
+        background-image: linear-gradient(
+            var(--rotate),
+            #2f343b 0%,
+            rgba(47, 52, 60, 0.9) 22.21%,
+            rgba(49, 54, 64, 0) 100%
+        );
+
+        position: absolute;
+        inset: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &::before {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        --rotate: 0deg;
+    }
+}

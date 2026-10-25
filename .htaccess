@@ -1,0 +1,12 @@
+# Файлы *.log в теме и её подкаталогах
+<IfModule mod_authz_core.c>
+    <FilesMatch "\.log$">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+    <FilesMatch "\.log$">
+        Order deny,allow
+        Deny from all
+    </FilesMatch>
+</IfModule>

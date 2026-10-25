@@ -1,0 +1,106 @@
+/* Стили цитат.
+   Два варианта:
+   1) blockquote.wp-block-quote / .article>blockquote — обычная цитата:
+      без иконки, с левым border (наследует border-left от базового blockquote).
+   2) .quote-block (вариант core/quote) — цитата с иконкой кавычек,
+      без левого border. Иконка задаётся в .quote-block::before (см. ниже).
+   3) Отдельный компонент .blockquote (не элемент blockquote в .article). */
+
+/* === Базовая цитата (без иконки) === */
+
+.wp-block-quote {
+  margin: 30px 0;
+  padding: 2px 32px;
+
+  position: relative;
+
+  &:before {
+    content: "";
+
+    width: 4px;
+    background-color: #20a1e5;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.wp-block-quote:not(.quote-block),
+.wp-block-quote:not(.quote-block) p {
+  font-family: var(--font-family);
+  font-size: 24px;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* === Вариант с иконкой === */
+
+.quote-block {
+  position: relative;
+  font-weight: 400;
+
+  &:before {
+    display: none;
+  }
+}
+
+.quote-block::before {
+  display: block;
+  content: '';
+
+  width: 49px;
+  height: 40px;
+
+  margin-bottom: 25px;
+
+  background: url('/wp-content/themes/sd-03-2_new/img/quote.svg');
+  position: relative;
+}
+
+.quote-block p:first-child strong {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 54px;
+  letter-spacing: -0.01em;
+}
+
+.quote-block__text {
+  line-height: 1.6;
+}
+
+.quote-block p {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+@media (max-width:767px) {
+  .quote-block p {
+    font-size: 18px;
+  }
+
+  .quote-block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .quote-block p:first-child strong {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width:991px) {
+  .quote-block p:first-child() strong {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+
+  .quote-block__name {
+    font-size: 28px;
+    line-height: 1.6;
+  }
+}

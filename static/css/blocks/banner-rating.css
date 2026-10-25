@@ -1,0 +1,5 @@
+.banner-rating {
+    &::before {
+        display: none;
+    }
+}

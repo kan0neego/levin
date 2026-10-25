@@ -1,0 +1,395 @@
+ .stb-kids-clinic__container {
+    height: 100%;
+    background-color: #CC4483;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-clinic-bg.png);
+ }
+
+ .stb-kids-clinic__content-container {
+    padding: 60px;
+ }
+
+ .heading_kids-stb {
+    font-size: 42px;
+    line-height: 135%;
+    font-weight: 300;
+    color: #fff !important;
+    margin: 0;
+ }
+
+ .stb-kids-clinic .heading_kids-stb {
+    max-width: 430px !important;
+ }
+
+ .kids-stb-line {
+    position: relative;
+    white-space: nowrap;
+ }
+
+ .kids-stb-line::after {
+    content: "";
+    position: absolute;
+    background: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-line.svg);
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+ }
+
+ .text_kids-stb {
+    color: white !important;
+    max-width: 490px;
+    margin: 20px 0 0 !important;
+ }
+
+ .kids-stb-list {
+    max-width: 550px;
+    margin: 20px 0 0;
+ }
+
+ .kids-stb-list li {
+    color: white !important;
+ }
+
+ .kids-stb-list li::after {
+    background: white !important;
+ }
+
+ .stb-kids_buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin-top: 40px;
+ }
+
+ .stb-kids-clinic .team-city-item__btn {
+    height: 50px;
+ }
+
+ .stb-kids-clinic .btn-n--wa {
+    width: 300px;
+    height: 50px;
+    white-space: nowrap;
+ }
+
+ @media screen and (max-width: 500px) {
+    .stb-kids-clinic__container {
+        background: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-clinic-mob-bg.png);
+        background-size: cover;
+    }
+
+    .stb-kids-clinic__content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        padding: 313px 20px 20px;
+    }
+
+    .heading_kids-stb {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .text_kids-stb {
+        font-size: 14px !important;
+        line-height: 18px !important;
+        margin-top: 10px !important;
+    }
+
+    .kids-stb-list {
+        margin-top: 10px;
+    }
+
+    .stb-kids_buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .stb-kids-clinic .team-city-item__btn {
+        width: 100%;
+    }
+ }
+
+ .stb-kids {
+    width: 100%;
+    margin: 2rem 0;
+ }
+
+ .stb-kids__container {
+    position: relative;
+    height: 100%;
+    background-color: #CC4483;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-bg.png);
+    overflow: hidden;
+ }
+
+ .stb-kids-snow {
+    position: absolute;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .stb-kids-snow:nth-child(1) {
+    width: 250px;
+    height: 250px;
+    left: -50px;
+    bottom: -70px;
+    background-image: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-snow-large.svg);
+    filter: blur(9px);
+    transform: rotate(13.9deg);
+ }
+
+ .stb-kids-snow:nth-child(2) {
+    width: 250px;
+    height: 250px;
+    right: -50px;
+    bottom: -70px;
+    background-image: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-snow-large.svg);
+    filter: blur(5px);
+    transform: rotate(13.9deg);
+    z-index: 2;
+ }
+
+ .stb-kids-snow:nth-child(3) {
+    width: 187px;
+    height: 187px;
+    right: 35%;
+    top: -80px;
+    background-image: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-snow-medium.svg);
+    filter: blur(3.5px);
+    transform: rotate(-17.95deg);
+    z-index: 2;
+ }
+
+ .stb-kids-snow:nth-child(4) {
+    width: 90px;
+    height: 90px;
+    right: -25px;
+    background-size: contain;
+    top: 130px;
+    background-image: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-snow-sqrt.svg);
+    transform: rotate(12.41deg);
+    z-index: 2;
+ }
+
+ .stb-kids-snow:nth-child(5) {
+    width: 72px;
+    height: 82px;
+    right: 30%;
+    background-size: contain;
+    bottom: 140px;
+    background-image: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-snow-rnd.svg);
+    transform: rotate(18.72deg);
+    z-index: 2;
+ }
+
+ .stb-kids__container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(9, 128, 218, 0) 72.21%, rgba(9, 128, 218, 0.43) 100%);
+ }
+
+ .stb-kids .special-order {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+ }
+
+ .stb-kids__content-container {
+    position: relative;
+    z-index: 2;
+    padding: 60px;
+ }
+
+ .stb-kids-action {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    background: linear-gradient(92.8deg, #1E8FED 1.07%, #1E3FED 44.17%, #062D99 73.89%, #4E028A 100%);
+    border-radius: 5px;
+    color: white !important;
+    width: fit-content;
+    height: 27px;
+    white-space: nowrap;
+    padding: 4px 8px;
+    margin-bottom: 15px;
+ }
+
+ .stb-kids .heading_kids-stb {
+    max-width: 536px !important;
+ }
+
+ .stb-kids .team-city-item__btn {
+    margin-top: 42px;
+    width: 215px;
+ }
+
+ .stb-kids__price-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background-image: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-star.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 360px;
+    height: 250px;
+    bottom: 0;
+    left: 35%;
+    z-index: 0;
+ }
+
+ .stb-kids__price-container::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    background-image: url(/wp-content/themes/sd-03-2_new/img/banners/kids/stb-kids-price-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -13%;
+    bottom: 25%;
+    z-index: 2;
+ }
+
+ .stb-kids__price-item:nth-child(1) {
+    font-weight: 500;
+    font-size: 47px;
+    line-height: 56px;
+    background-image: linear-gradient(91.49deg, #FFC738 -1.17%, #FFAA2C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+
+ .stb-kids__price-item:nth-child(2) {
+    position: relative;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: white;
+    opacity: 0.8;
+    margin-top: -0.5rem;
+    margin-bottom: 48px;
+ }
+
+ .stb-kids__price-item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: rotate(9deg);
+    z-index: 2;
+ }
+
+ .stb-kids-price_mobile {
+    display: none;
+ }
+
+ @media screen and (max-width: 1000px) {
+    .stb-kids__price-container {
+        left: inherit;
+        right: 0;
+        z-index: 2;
+    }
+
+    .stb-kids__price-container::before {
+        display: none;
+    }
+
+    .stb-kids-snow:nth-child(2) {
+        display: none;
+    }
+
+    .stb-kids-snow:nth-child(5) {
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+    .stb-kids__container {
+        background-position: left;
+    }
+
+    .stb-kids__container::after {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(9, 128, 218, 0)20.21%, rgba(9, 128, 218, 0.43) 100%);
+    }
+
+    .special-order {
+        width: 80px;
+        height: 80px;
+        display: none;
+    }
+
+    .stb-kids__content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .stb-kids-action {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .stb-kids .heading_kids-stb {
+        order: 1;
+        text-align: center;
+        margin-top: 20px !important;
+    }
+
+    .kids-stb-list {
+        order: 3;
+    }
+
+    .stb-kids__price-container {
+        display: none;
+    }
+
+    .stb-kids .team-city-item__btn {
+        width: 100%;
+        order: 4;
+        margin: 20px 0 0;
+    }
+
+    .stb-kids-price_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        order: 3;
+        margin: 0.5rem 0 1rem;
+    }
+
+    .stb-kids-price_mobile .stb-kids__price-item:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    .stb-kids-snow:nth-child(4) {
+        filter: blur(3px);
+    }
+ }

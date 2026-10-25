@@ -1,0 +1,145 @@
+.site-menu__social-icon_vk {
+  background-image: url(../../img/icons/social/vk.svg);
+}
+
+.site-menu__social-icon_vk:hover {
+  background-image: url(../../img/icons/social/vk-hover.svg);
+}
+
+.site-menu__social-icon_vk:active {
+  background-image: url(../../img/icons/social/vk-active.svg);
+}
+
+.site-menu__social-icon_wa {
+  background-image: url(../../img/icons/social/wa.svg);
+}
+
+.site-menu__social-icon_wa:hover {
+  background-image: url(../../img/icons/social/wa-hover.svg);
+}
+
+.site-menu__social-icon_wa:active {
+  background-image: url(../../img/icons/social/wa-active.svg);
+}
+
+.site-menu__social-icon_youtube {
+  background-image: url(../../img/icons/social/youtube.svg);
+}
+
+.site-menu__social-icon_youtube:hover {
+  background-image: url(../../img/icons/social/youtube-hover.svg);
+}
+
+.site-menu__social-icon_youtube:active {
+  background-image: url(../../img/icons/social/youtube-active.svg);
+}
+
+.site-menu__social-icon_telegram {
+  background-image: url(../../img/icons/social/telegram.svg);
+}
+
+.site-menu__social-icon_telegram:hover {
+  background-image: url(../../img/icons/social/telegram-hover.svg);
+}
+
+.site-menu__social-icon_telegram:active {
+  background-image: url(../../img/icons/social/telegram-active.svg);
+}
+
+.site-menu__social-icon_rutube {
+  background-image: url(../../img/icons/social/rutube.svg);
+}
+
+.site-menu__social-icon_rutube:hover {
+  background-image: url(../../img/icons/social/rutube-hover.svg);
+}
+
+.site-menu__social-icon_rutube:active {
+  background-image: url(../../img/icons/social/rutube-active.svg);
+}
+
+.site-menu__social-icon_dzen {
+  background-image: url(../../img/icons/social/dzen.svg);
+}
+
+.site-menu__social-icon_dzen:hover {
+  background-image: url(../../img/icons/social/dzen-hover.svg);
+}
+
+.site-menu__social-icon_dzen:active {
+  background-image: url(../../img/icons/social/dzen-active.svg);
+}
+
+/* old icons */
+
+i[class*=" icon-"],
+i[class^="icon-"] {
+  font-family: icomoon !important;
+  speak: never;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-parking .path1:before {
+  content: "\e93e";
+  color: #0c69e2;
+}
+
+.icon-parking .path2:before {
+  content: "\e93f";
+  margin-left: -1.0458984375em;
+  color: #fcf8f2;
+}
+
+.icon-parking .path3:before {
+  content: "\e940";
+  margin-left: -1.0458984375em;
+  color: #fcf8f2;
+}
+
+.icon-reload:before {
+  content: "\e945";
+  color: #fff;
+}
+
+.icon-star:before {
+  content: "\e94a";
+}
+
+.icon-wa-btn:before {
+  content: "\e959";
+  color: #fff;
+}
+
+.icon-arrow-accordion-path:before {
+  content: "\e95b";
+  color: #70757e;
+}
+
+.icon-car:before {
+  content: "\e962";
+}
+
+.icon-driveway:before {
+  content: "\e967";
+  color: #20a1e5;
+}
+
+.icon-hourglass:before {
+  content: "\e96a";
+  color: #bd876e;
+}
+
+.icon-injection:before {
+  content: "\e96b";
+  color: #bd876e;
+}
+
+.icon-pedestrian:before {
+  content: "\e941";
+}

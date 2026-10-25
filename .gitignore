@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+
+vendor/
+node_modules/
+log/
+
+.clinerules
+.config/
+.reslop
+.plan/
+.log
+

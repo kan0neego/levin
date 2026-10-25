@@ -1,0 +1,11 @@
+.stretch-link {
+    display: contents;
+
+    &::before {
+        display: block;
+        content: '';
+
+        position: absolute;
+        inset: 0;
+    }
+}

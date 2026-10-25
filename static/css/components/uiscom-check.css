@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* ============================================================
+   Автономный фолбэк «Позвоните по номеру телефона».
+
+   Блок самодостаточен и не зависит от классов/переменных темы.
+   Палитра настраивается собственными CSS-переменными:
+     --uiscom-check-accent          акцент (номер телефона)
+     --uiscom-check-accent-hover    акцент при наведении
+     --uiscom-check-ink             основной цвет текста
+     --uiscom-check-muted           цвет поясняющего текста
+   ============================================================ */
+
+:root {
+  --uiscom-check-accent: transparent;
+  --uiscom-check-accent-hover: #1e8fed,;
+  --uiscom-check-ink: #fff;
+  --uiscom-check-muted: currentColor;
+}
+
+[data-uiscom-view][hidden] {
+  display: none !important;
+}
+
+.uiscom-check-offline {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 44px 42px;
+
+  color: var(--uiscom-check-ink);
+}
+
+.uiscom-check-heading {
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: .01em;
+  font-weight: 500;
+}
+
+.uiscom-check-text {
+  max-width: 65%;
+  margin: 20px 0 0;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--uiscom-check-muted);
+}
+
+.uiscom-check-phone {
+  display: inline-block;
+  margin: 20px 0px 0px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--uiscom-check-accent);
+  background-image: linear-gradient(90deg, #1e8fed, #1c53d1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  word-break: break-word;
+
+  &:hover {
+    /* color: var(--uiscom-check-accent-hover); */
+    border-bottom-color: #1e8fed;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .uiscom-check-offline {
+    padding: 24px 20px 28px;
+  }
+
+  .uiscom-check-heading {
+    font-size: 24px;
+  }
+
+  .uiscom-check-text {
+    max-width: unset;
+    font-size: 15px;
+  }
+
+  .uiscom-check-phone {
+    font-size: 24px;
+  }
+}

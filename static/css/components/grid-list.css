@@ -1,0 +1,26 @@
+.grid-list {
+    --item-width: 33.333%;
+    --margin: 0px;
+    --row-gap: 0px;
+    --col-gap: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: calc(var(--row-gap) * 2);
+
+    margin: 0px calc(0px - var(--col-gap));
+    margin-bottom: calc(0px - var(--margin) * 2);
+
+}
+
+.grid-list-item {
+    width: var(--item-width);
+    padding: 0px var(--col-gap);
+    margin-bottom: calc(var(--margin) * 2);
+
+    @media screen and (max-width: 768px) {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

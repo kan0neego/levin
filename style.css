@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*
+Theme Name: SD-03
+Author: Nope
+Description: Стоматологическая клиника «Доктор Левин» — тема doctorlevin.ru
+Version: 3.4
+*/
+
+/* Единый минифицированный бандл темы. Собирается webpack'ом из
+   static/css/index.css (точка входа с полной цепочкой @import в каноническом
+   порядке каскада). Пересборка: cd static && npm run build.
+   Отдельные CSS-файлы в рантайме НЕ подключаются — только этот бандл. */
+@import url(./static/css/bundle.css);
+

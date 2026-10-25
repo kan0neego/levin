@@ -1,0 +1,439 @@
+/* doctors-advice */
+
+.doctors-advice {
+  background: #1b2b46;
+  border-radius: 15px;
+  margin: 60px 0;
+  overflow: hidden;
+}
+
+.section-doctors-advice .doctors-advice {
+  margin: 0;
+}
+
+.doctors-advice__container {
+  position: relative;
+  padding: 30px 40px;
+}
+
+.doctors-advice__container::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 27px;
+  width: 493px;
+  height: 521px;
+  background-image: url(../../static/img/doctors-advice-star.svg);
+}
+
+.doctors-advice__text-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctors-advice__text-date {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  border: 1.50px solid #4c5d78;
+  border-radius: 18px;
+  padding: 12px 16px 10px;
+  margin-bottom: 24px;
+}
+
+.doctors-advice__text-date span {
+  display: inline;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--main-white);
+}
+
+.doctors-advice .doctors-advice__text-container h2 {
+  position: relative;
+  z-index: 2;
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: var(--main-white);
+  max-width: 530px;
+  margin: 0 0 0px;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.doctors-advice .doctors-advice__text-container h2::after {
+  content: none;
+  display: none;
+}
+.doctors-advice .doctors-advice__text-container p {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 22px !important;
+  line-height: 135% !important;
+  letter-spacing: 0.02em;
+  color: var(--main-white);
+  max-width: 480px;
+  margin: 0 0 24px;
+}
+
+.section-doctors-advice .doctors-advice .doctors-advice__text-container p {
+  max-width: 580px;
+}
+
+.doctors-advice__text-container p strong {
+  font-weight: 400;
+}
+
+.doctors-advice__price-container {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.doctors-advice__price-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 16px;
+}
+
+.doctors-advice__price-after {
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: var(--main-white);
+}
+
+.doctors-advice__price-after span {
+  font-weight: 400 !important;
+}
+
+.doctors-advice__price-before {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: line-through;
+}
+
+.doctors-advice__image {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+}
+
+.doctors-advice__image.two-doctors {
+  right: 0;
+  width: 654px;
+  max-height: calc(100% - 27px);
+  object-fit: contain;
+}
+
+.doctors-advice__image.single-doctor {
+  right: 40px;
+  max-width: 480px;
+}
+
+.doctors-advice__image.two-doctors {
+  right: -53px;
+}
+
+.doctors-advice .b-button {
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 1660px) {
+  .doctors-advice__text-container h2 {
+    max-width: 490px;
+  }
+
+  .doctors-advice__text-container p {
+    max-width: 450px;
+  }
+
+  .doctors-advice__image.two-doctors {
+    right: -60px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .doctors-advice__text-container h2 {
+    max-width: 515px;
+  }
+
+  .doctors-advice__text-container p {
+    max-width: 475px;
+  }
+
+  .doctors-advice__image.two-doctors {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .doctors-advice__container {
+    padding: 0 20px 20px;
+  }
+
+  .doctors-advice__container::before {
+    display: none;
+  }
+
+  .doctors-advice__container::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 210px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(180deg, rgba(49, 54, 64, 0) 0%, #1b2b46 100%);
+  }
+
+  .doctors-advice__text-container {
+    padding-top: 240px;
+  }
+
+  .doctors-advice__text-date {
+    padding: 5px 12px;
+    margin-bottom: 12px;
+  }
+
+  .doctors-advice__text-date span {
+    font-size: 12px;
+  }
+
+  .doctors-advice .doctors-advice__text-container h2 {
+    font-size: 24px;
+    max-width: none;
+  }
+
+  .doctors-advice .doctors-advice__text-container p {
+    font-size: 16px !important;
+    max-width: none !important;
+  }
+
+  .doctors-advice__image {
+    z-index: 1;
+    bottom: initial;
+    right: initial;
+    left: 50%;
+    top: 20px;
+    height: 310px !important;
+    transform: translateX(-50%);
+  }
+
+  .doctors-advice__image.two-doctors {
+    left: 50%;
+    right: initial;
+    height: initial;
+    max-width: none;
+  }
+
+  .doctors-advice__image.single-doctor {
+    left: 50%;
+    right: initial;
+    height: initial;
+    max-width: none;
+  }
+
+  .doctors-advice__price-title {
+    margin-bottom: 8px;
+  }
+
+  .doctors-advice__price-after {
+    font-size: 28px;
+  }
+
+  .doctors-advice__price-before {
+    font-size: 18px;
+  }
+
+  .doctors-advice .bn__button {
+    max-width: none;
+    margin-top: 22px;
+  }
+}
+
+/* consultation-modal */
+
+.consultation-modal__container {
+  width: 1074px !important;
+  /*min-height: 611px !important;*/
+  max-width: none !important;
+  height: initial !important;
+  background-image: url(../../img/consultation-modal.jpg) !important;
+  background-size: contain !important;
+  background-position: center right !important;
+  background-repeat: no-repeat !important;
+  border-radius: 15px;
+  padding: 70px 80px !important;
+  overflow: hidden;
+}
+
+.consultation-modal__container .modal-content {
+  margin: 0 !important;
+}
+
+.consultation-modal__container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(2, 25, 46, 0) 19.55%, rgba(2, 25, 46, 0.54) 35.25%, rgba(2, 25, 46, 0.73) 43.69%, #02192e 73.49%, #02192e 100%);
+}
+
+.consultation-modal__container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 230px;
+  background: linear-gradient(180deg, rgba(2, 25, 46, 0) 2.55%, rgba(2, 25, 46, 0.61) 64.11%, #02192e 100%);
+}
+
+.consultation-modal .doctors-advice__text-container h2 {
+  font-size: 54px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.consultation-modal .doctors-advice__text-container p {
+  max-width: 480px;
+}
+
+.consultation-modal .modal-content {
+  margin: 0;
+}
+
+.consultation-modal .modal-col2 {
+  margin-top: 20px;
+}
+
+.consultation-modal.my-modal .modal-content .callback-form__submit {
+  margin-bottom: 0;
+}
+
+.consultation-modal .call-block__agreement {
+  margin-top: 20px;
+}
+
+.consultation-modal__close {
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  top: 20px;
+  border-radius: 100%;
+  width: 54px;
+  height: 54px;
+  background-color: #20a1e5;
+  border: none;
+  cursor: pointer;
+}
+
+.consultation-modal__close::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%) translateY(50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(../../img/consultation-modal-close.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.consultation-modal.my-modal .modal-response .response-title {
+  font-family: var(--third-family);
+}
+
+.consultation-modal.my-modal .modal-response>div span {
+  font-family: var(--font-family);
+}
+
+.consultation-modal.my-modal .modal-response {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .consultation-modal__container {
+    width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .consultation-modal__container {
+    /*min-height: 0 !important;*/
+    background: radial-gradient(130.88% 145.68% at -15.44% 131.09%, rgb(12, 69, 120) 0%, rgb(0, 25, 47) 82.27385878562927%, rgb(1, 24, 45) 100%) !important;
+    padding: 20px 10px !important;
+    overflow: visible !important;
+  }
+
+  .consultation-modal__container::after {
+    display: none !important;
+  }
+
+  .consultation-modal__container::before {
+    display: none !important;
+  }
+
+  .consultation-modal__close {
+    right: 9px;
+    top: -27px;
+  }
+
+  .consultation-modal .doctors-advice__text-container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .consultation-modal .doctors-advice__text-date {
+    padding: 5px 12px;
+  }
+
+  .consultation-modal .doctors-advice__text-container h2 {
+    font-size: 36px;
+    max-width: none;
+    margin-top: 15px;
+  }
+
+  .consultation-modal .doctors-advice__text-container p {
+    font-size: 20px !important;
+    margin-top: 10px;
+  }
+
+  .consultation-modal .callback-form__submit {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .consultation-modal .call-block__agreement {
+    margin-top: 15px;
+  }
+
+  .consultation-modal .call-block__privacy {
+    text-align: left;
+  }
+}

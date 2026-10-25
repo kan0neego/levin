@@ -1,0 +1,102 @@
+/* index.css — точка входа для сборки бандла через webpack.
+ *
+ * Полная цепочка @import в каноническом порядке каскада: базовые →
+ * навигация/каркас → контент-блоки → старая разметка → страницы.
+ * Порядок КРИТИЧЕН — не переставлять без проверки переопределений
+ * (см. docs/05-ревизия-css.md).
+ *
+ * Структура каталогов (static/css/):
+ *   base/       — токены/база
+ *   layout/     — навигация/каркас (sidebar, navigation, mobile-menu, footer)
+ *   blocks/     — контент-блоки и старая разметка
+ *   components/ — мелкие standalone-компоненты
+ *   pages/      — стили страниц
+ *   (корень)    — bootstrap-utils.css, index.css (эта точка входа), bundle.css
+ *
+ * Пути к @import — относительные от ЭТОГО файла (static/css/); vendor лежит
+ * в ../../src/vendor/ (от static/css/ до корня темы — два уровня вверх).
+ * Этот файл НЕ подключается в рантайме: webpack читает его, разрешает все
+ * @import и собирает минифицированный static/css/bundle.css, на который
+ * ссылается style.css одним @import.
+ *
+ * При добавлении/перестановке CSS: править список здесь → npm run build.
+ */
+
+/* 1. Базовый фреймворк */
+@import "./bootstrap-utils.css";
+
+/* 2–3. Vendor (Swiper) */
+@import "../../src/vendor/swiper-bundle.css";
+@import "../../src/vendor/swiper.css";
+
+/* 4–7. Токены/база */
+@import "./base/constants.css";
+@import "./base/fonts.css";
+@import "./base/icons.css";
+@import "./base/globals.css";
+
+/* 8–11. Навигация/каркас */
+@import "./layout/sidebar.css";
+@import "./layout/navigation.css";
+@import "./layout/mobile-menu.css";
+@import "./components/sliders.css";
+
+/* 12–30. Контент-блоки */
+@import "./blocks/sections.css";
+@import "./blocks/block-sleep.css";
+@import "./blocks/components.css";
+@import "./blocks/popups.css";
+@import "./blocks/about.css";
+@import "./blocks/team-reviews.css";
+@import "./blocks/service-sections.css";
+@import "./blocks/consult-sections.css";
+@import "./blocks/statistics.css";
+@import "./blocks/banners-kids.css";
+@import "./blocks/installment-widget.css";
+@import "./blocks/gnathology.css";
+@import "./blocks/prices.css";
+@import "./blocks/consultation.css";
+@import "./blocks/blocks.css";
+@import "./blocks/form.css";
+@import "./blocks/article.css";
+@import "./blocks/blockquote.css";
+@import "./blocks/ui-components.css";
+@import "./blocks/filters.css";
+
+/* 31. Подвал */
+@import "./layout/footer-old.css";
+
+/* 32–39. Старая, частично перенесённая разметка */
+@import "./blocks/gallery.css";
+@import "./blocks/awards.css";
+@import "./blocks/video.css";
+@import "./blocks/blog.css";
+@import "./blocks/components-old.css";
+@import "./blocks/legacy-media.css";
+@import "./blocks/stages.css";
+@import "./blocks/modals-old.css";
+
+/* 40–54. Страницы и мелкие компоненты */
+@import "./pages/index-page.css";
+@import "./pages/doctors-page.css";
+@import "./components/doctor-card.css";
+@import "./pages/contacts-page.css";
+@import "./pages/page-test.css";
+
+@import "./pages/banner-page.css";
+@import "./blocks/banner.css";
+@import "./blocks/banner-regions.css";
+@import "./blocks/banner-rating.css";
+@import "./blocks/banner-doctor.css";
+@import "./blocks/banner-contact.css";
+
+@import "./pages/landing.css";
+@import "./components/uiscom-check.css";
+@import "./components/case-card.css";
+@import "./components/avatar.css";
+@import "./components/grid-list.css";
+@import "./components/image.css";
+@import "./components/blog-card.css";
+@import "./components/decorators.css";
+@import "./pages/case.css";
+@import "./components/prose.css";
