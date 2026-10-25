@@ -1482,10 +1482,6 @@
     .doctor-profile__hat .hat__name .titless {
         padding-bottom: 0;
     }
-
-    .hat {
-        padding: 0 0 8px;
-    }
 }
 
 @media (max-width: 425px) {
@@ -1753,6 +1749,10 @@ iframe .ytp-large-play-button {
 
     @media screen and (max-width: 1024px) {
         background-position-x: 70%;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 32px;
     }
 
     @media screen and (max-width: 640px) {
