@@ -117,10 +117,6 @@ add_action(
                 'url'  => get_template_directory_uri() . '/static/js/editor-doctor-card.js',
                 'deps' => array( 'wp-blocks', 'wp-element', 'wp-block-editor', 'wp-components' ),
             ),
-            'theme-standards'    => array(
-                'url'  => get_template_directory_uri() . '/static/js/editor-standards.js',
-                'deps' => array( 'wp-blocks', 'wp-element', 'wp-block-editor', 'wp-components' ),
-            ),
         );
 
         foreach ( $editor_js as $handle => $script ) {
