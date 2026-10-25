@@ -337,14 +337,6 @@
     transform: rotate(180deg) translateY(50%);
 }
 
-.question__content li {
-    line-height: 1.75;
-    font-size: 20px;
-    font-weight: 300;
-    font-family: var(--font-family);
-    margin-bottom: 15px;
-}
-
 .accordeon_open .question__head .underline_dashed {
     background-image: -webkit-gradient(
         linear,
