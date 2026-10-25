@@ -5149,50 +5149,6 @@ button.close {
         0 1px 0 hsla(0, 0%, 100%, 0.1);
 }
 
-section {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #135fa7;
-}
-
-.overl {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    box-shadow: inset -38px -33px 179px 11px rgba(0, 36, 89, 0.81);
-    margin: 0;
-}
-
-.b-lazy {
-    background-size: cover;
-    background-color: #0085c3;
-    height: 100%;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-    max-width: 100%;
-    opacity: 0.3;
-}
-
-.b-lazy.b-loaded {
-    opacity: 1;
-}
-
-#sec-1,
-#sec-2 {
-    background: #135fa7;
-}
-
-.slide_title_block {
-    position: absolute;
-    top: 30%;
-    text-align: left;
-    z-index: 20;
-}
-
 .entry-content img {
     margin: 0 0 1.5em;
 }
@@ -5684,28 +5640,8 @@ img.circle {
 }
 
 @media screen and (max-width: 968px) {
-    .overl {
-        background-color: rgba(10, 76, 151, 0.4);
-    }
-
-    .slide_title_block {
-        top: 30%;
-    }
-
     video:not(.banner-video__video, .f-html5video) {
         display: none;
-    }
-
-    #sec-1 {
-        background: url(https://doctorlevin.ru/wp-content/uploads/2015/12/111.png);
-        background-size: cover;
-        background-position: 50%;
-    }
-
-    #sec-2 {
-        background: url(https://doctorlevin.ru/wp-content/uploads/2015/12/22.jpg);
-        background-size: cover;
-        background-position: 50%;
     }
 
     .fce {
@@ -6008,17 +5944,6 @@ img.circle {
         padding: 20px 10px;
     }
 
-    .b-lazy {
-        -moz-transition: opacity 0.5s ease-in-out;
-        -o-transition: opacity 0.5s ease-in-out;
-        min-height: 350px;
-        background-size: cover;
-        box-shadow: inset 12px -107px 231px -62px rgba(0, 25, 87, 0.91);
-        _background-image: url(https://doctorlevin.ru/wp-content/uploads/2015/12/doc_1-1440x960.jpg);
-        height: auto;
-        background-position: 100% 0;
-    }
-
     .button_header {
         display: inline-block;
         width: 100%;
@@ -6083,9 +6008,6 @@ img.circle {
         padding: 20px 10px;
     }
 
-    .page_doctor .b-lazy {
-        min-height: 241px;
-    }
 
     .head_doctor {
         position: relative;
@@ -6106,9 +6028,6 @@ img.circle {
         padding: 15px 10px;
     }
 
-    .page_doctor .b-lazy {
-        min-height: 241px;
-    }
 
     .head_doctor {
         position: relative;
@@ -6129,9 +6048,6 @@ img.circle {
         padding: 15px 10px;
     }
 
-    .page_doctor .b-lazy {
-        min-height: 241px;
-    }
 
     .head_doctor {
         position: relative;
@@ -6152,9 +6068,6 @@ img.circle {
         padding: 20px 10px;
     }
 
-    .page_doctor .b-lazy {
-        min-height: 241px;
-    }
 
     .head_doctor {
         position: relative;
@@ -6175,9 +6088,6 @@ img.circle {
         padding: 20px 10px;
     }
 
-    .page_doctor .b-lazy {
-        min-height: 340px;
-    }
 
     .head_doctor {
         position: relative;

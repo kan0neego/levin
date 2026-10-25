@@ -12,7 +12,6 @@ jQuery(function ($) {
 
     // Мобильная высота
     if (is_mobile()) {
-        $('#sec-1').css('height', $(window).height() - 58);
         $('.sidebar__item').css('height', $(window).height() - 58);
     }
 
