@@ -168,9 +168,8 @@ const init = () => {
         
         const preloader = document.querySelector(".preloader:not(.preloader_iframe)");
         const preloaderRound = preloader && preloader.querySelector(".preloader__round");
-        preloaderRound.style.background = optionsGetreview.preloaderColor && optionsGetreview.preloaderColor !== "" ? optionsGetreview.preloaderColor : "rgb(25 0 84)";
-        if (optionsGetreview.preloaderColor && optionsGetreview.preloaderColor !== "") {
-            document.documentElement.style.setProperty('--preloader-color', `${optionsGetreview.preloaderColor}`)
+        if (preloaderRound) {
+            preloaderRound.style.background = "rgb(25 0 84)";
         }
         
         sizeVideo();
@@ -180,8 +179,9 @@ const init = () => {
         
         const videotubeModalContainer = document.querySelector("#videotube-modal-container");
         videotubeModalContainer.style.display = "initial";
-        console.log(preloader);
-        preloader.classList.remove("preloader_active");
+        if (preloader) {
+            preloader.classList.remove("preloader_active");
+        }
     }
     ;
     overlay.addEventListener('click', closeVideoTubeModal);
