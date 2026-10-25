@@ -56,11 +56,6 @@
             eager: false
         },
         {
-            selector: '.photos-works',
-            script: 'slider-photos-works.js',
-            eager: false
-        },
-        {
             selector: '.video-reviews__swiper-container',
             script: 'slider-video-reviews.js',
             eager: false
