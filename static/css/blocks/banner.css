@@ -28,16 +28,6 @@
     color: #fff;
 }
 
-.banner__content b,
-.banner__name,
-.banner__text {
-    text-wrap: balance;
-
-    @media screen and (max-width: 370px) {
-        text-wrap: unset;
-    }
-}
-
 @media screen and (max-width: 640px) {
     .banner__text {
         font-size: 16px;
@@ -171,10 +161,14 @@
 }
 
 .banner__content {
-    max-width: 880px;
+    max-width: 700px;
 
     position: relative;
     z-index: 6;
+
+    &:where(.doctor-profile *) {
+        max-width: 600px;
+    }
 }
 
 .banner__text-item {

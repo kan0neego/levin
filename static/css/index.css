@@ -26,8 +26,8 @@
 @import "./bootstrap-utils.css";
 
 /* 2–3. Vendor (Swiper) */
-@import "../../src/vendor/swiper-bundle.css";
-@import "../../src/vendor/swiper.css";
+@import "../vendor/swiper-bundle.css";
+@import "../vendor/swiper.css";
 
 /* 4–7. Токены/база */
 @import "./base/constants.css";
