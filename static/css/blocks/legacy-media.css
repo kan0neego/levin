@@ -7,21 +7,6 @@
 }
 
 @media (max-width: 1500px) {
-  .b-quote__content-text {
-    font-size: 20.8px;
-    line-height: 33.6px;
-  }
-
-  .b-quote__author-name {
-    font-size: 14.4px;
-    line-height: 16.8px;
-  }
-
-  .b-quote__author-text {
-    font-size: 12.8px;
-    line-height: 17.6px;
-  }
-
   table.table-doctor tr:first-child:nth-child(odd) {
     font-size: 14.4px !important;
   }
@@ -124,21 +109,6 @@
     width: 100%;
   }
 
-  .b-quote__content {
-    padding-left: 20px;
-    max-width: 60%;
-  }
-
-  .b-quote__avatar {
-    width: 300px;
-    height: 300px;
-  }
-
-  .b-quote__avatar>* {
-    width: 300px;
-    height: 330px;
-  }
-
   .card__name-wrap {
     max-width: 100%;
   }
@@ -183,30 +153,6 @@
 }
 
 @media (max-width: 767px) {
-  .b-quote__avatar {
-    margin-left: 0;
-    margin-bottom: 30px;
-  }
-
-  .b-quote__content::before {
-    display: none;
-  }
-
-  .b-quote {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .b-quote__author {
-    margin-top: 20px;
-    text-align: center;
-
-  }
-
-  .b-quote__author-text {
-    max-width: 100%;
-  }
-
   .advantage-name {
     font-size: 16px;
     line-height: 19.2px;
@@ -247,36 +193,8 @@
     display: inherit;
   }
 
-  .b-quote {
-    position: relative;
-  }
-
-  .b-quote__content {
-    max-width: 100%;
-    padding: 0;
-  }
-
   .price-item::nth-child(even) {
     background: #F9F9F9;
-  }
-
-  .b-quote__content-text {
-    padding-left: 0;
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .b-quote__name {
-    text-align: center;
-  }
-
-  .b-quote__content-text::before {
-    left: 0;
-  }
-
-  .b-quote__author {
-    margin-top: 30px;
   }
 
   .card {
@@ -433,22 +351,6 @@
 
   .card__button {
     bottom: 28px;
-  }
-
-  .b-quote__author-name {
-    font-size: 17px;
-    line-height: 26px;
-    display: inline;
-  }
-
-  .b-quote__author-text {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .b-quote__content-text {
-    font-size: 20px;
-    line-height: 34px;
   }
 }
 

@@ -60,36 +60,6 @@ get_header();
   </div>
 </div>
 
-<!-- section-dark-gray -->
-<!-- section-dark-blue -->
-<div class="section section-default section-quote-with-image pt-0">
-  <div class="page__container_index page__container_full">
-    <div class="lazyblock-quote-with-title-1oLVvD wp-block-lazyblock-quote-with-title">
-      <div class="b-quote">
-        <div class="b-quote__content">
-          <div class="b-quote__name">Работаю с Nobel и Straumann <strong>более 10 лет</strong> </div>
-          <div class="b-quote__content-text">
-            Отличные системы с большим разнообразием имплантатов и компонентов для самых разных клинических
-            ситуаций. Производители предоставляют бессрочную гарантию. Хороший хирургический протокол
-            позволяет
-            достичь прогнозируемого результата. Поэтому и на установку этих систем можно без опасений
-            предоставлять гарантию на всю жизнь. </div>
-          <div class="b-quote__author">
-            <a href="/fulin-yanovskiy-sergey-aleksandrovich/" class="b-quote__author-name">Фулин-Яновский
-              Сергей
-              Александрович</a>
-            <div class="b-quote__author-text">Челюстно-лицевой хирург</div>
-          </div>
-        </div>
-        <div class="b-quote__avatar">
-          <img decoding="async" loading="lazy"
-            src="https://doctorlevin.ru/wp-content/themes/sd-03-2_new/image/doctors/fulin.png">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="section section-default section-treat-list pt-0">
   <div class="page__container_index page__container_full">
     <div class="treat-list__container">

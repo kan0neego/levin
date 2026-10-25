@@ -114,12 +114,6 @@ $h1 = get_field('h1');
 
     <?php get_template_part('template-parts/sections/services-cards'); ?>
 
-    <div class="section section-default section-quote-with-image pt-40 pt-0-mob">
-        <div class="page__container_index page__container_full">
-            <?php get_template_part('template-parts/gnathology/quote'); ?>
-        </div>
-    </div>
-    
     <div class="section section-default section-identification-symptoms section-dark-gray pt-0 pb-0">
         <div class="page__container_index page__container_full">
             <?php get_template_part('template-parts/gnathology/symptoms'); ?>
