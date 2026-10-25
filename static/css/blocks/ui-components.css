@@ -256,19 +256,24 @@
 }
 
 .question__head {
+    padding: 22px 30px;
+    padding-right: 50px;
+
     font-family: var(--third-family);
     font-weight: 500;
     color: #313640;
-    padding: 22px 30px;
     font-size: 24px;
-    line-height: 36px;
-    position: relative;
-    -webkit-transition-property: color, background-color;
+    line-height: 1.5;
+
     transition-property: color, background-color;
-    -webkit-transition-duration: 0.1s;
     transition-duration: 0.1s;
+
     user-select: none;
-    padding-right: 50px;
+    position: relative;
+
+    @media screen and (max-width: 640px) {
+        font-size: 18px;
+    }
 }
 
 .question__head:hover {
