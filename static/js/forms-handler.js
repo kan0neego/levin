@@ -35,7 +35,10 @@
  *    Ответ: строка "Ok" при успехе
  *
  * 2. Comagic (CRM / телефония)
- *    Вызов: window.Comagic.addOfflineRequest({ phone, name?, message? })
+ *    Вызов: window.Comagic.addOfflineRequest({
+ *      phone, name?, message?,
+ *      formType, initial_src, last_src, referrer, utm
+ *    })
  *    Если Comagic не загружен на странице — вызов пропускается без ошибки.
  *
  * Отправка в ajax.php и Comagic происходит параллельно (Promise.allSettled).
@@ -286,7 +289,14 @@
                     resolve({ success: false, ms: 0 });
                     return;
                 }
-                const comagicData = { phone: data.phone };
+                const comagicData = {
+                    phone: data.phone,
+                    formType: data.formType,
+                    initial_src: data.initial_src,
+                    last_src: data.last_src,
+                    referrer: data.referrer,
+                    utm: data.utm,
+                };
                 if (data.name) comagicData.name = data.name;
                 if (data.message) comagicData.message = data.message;
 
