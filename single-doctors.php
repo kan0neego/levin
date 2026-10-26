@@ -27,7 +27,7 @@ $DOCTOR_ID = null;
 
 <div class="page doctor-profile">
     <header class="hat">
-        <?php get_template_part( 'template-parts/doctor/hero-banner', null, array( 'portfolio' => $portfolio ) ); ?>
+        <?php get_template_part('template-parts/doctor/hero-banner', null, ['portfolio' => $portfolio]); ?>
     </header>
 
     <main class="page__content page__container">
@@ -61,7 +61,9 @@ $DOCTOR_ID = null;
       foreach( $images as $image ):
       ?>
                     <div class="swiper-slide">
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="" class="glightbox" data-gallery="gallery1">
+                        <a href="<?php echo esc_url($image['url']); ?>" class="glightbox">
+                            <img src="<?php echo esc_url($image['url']); ?>" alt="" data-lightbox="gallery-cert">
+                        </a>
                     </div>
 
                     <?php
@@ -265,8 +267,8 @@ $DOCTOR_ID = null;
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal"><span
-                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
                 <img src="" class="imagepreview" style="width: 100%;">
             </div>
         </div>

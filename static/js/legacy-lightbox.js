@@ -57,6 +57,12 @@ $.getScript('https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jq
             touchNavigation: true,
             loopAtEnd: true
         });
+
+        new GLightbox({
+            selector: '.slide-certificates .glightbox',
+            touchNavigation: true,
+            loopAtEnd: true
+        });
     }
 
     if (document.readyState === 'complete') {
