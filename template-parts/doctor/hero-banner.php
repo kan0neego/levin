@@ -11,30 +11,6 @@ $portfolio = isset($args['portfolio']) ? $args['portfolio'] : '';
             echo '<span>' . str_replace(' ', '</span> ', $title);
             ?>
         </h1>
-        <?php
-            if(is_single ('9006')) {
-        ?>
-        <div class="banner-doctor__badge">
-            <div class="banner-doctor__badge-item nobel">
-                <img src="/image/doctors/nobel-badge.svg" alt="">
-                <span>Сертифицированный<br>специалист Nobel</span>
-            </div>
-        </div>
-        <?php
-            }
-        ?>
-        <?php
-            if(is_single ('8261')) {
-        ?>
-        <div class="banner-doctor__badge">
-            <div class="banner-doctor__badge-item inv">
-                <img src="<?php echo get_template_directory_uri(); ?>/image/doctors/inv-badge.svg" alt="">
-                <span>ТОП-5 экспертов<br>Invisalign в Москве</span>
-            </div>
-        </div>
-        <?php
-            }
-        ?>
         <div class="banner-doctor__items">
             <div class="banner-doctor__item">
                 <div class="banner-doctor__span">Специализация</div>

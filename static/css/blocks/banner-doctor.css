@@ -1,49 +1,3 @@
-.banner-doctor__badge {
-    display: none;
-    width: 100%;
-}
-
-.banner-doctor__badge-item {
-    padding: 9px 20px;
-    display: flex;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 375px;
-}
-
-.banner-doctor__badge-item span {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-left: 12px;
-}
-
-.banner-doctor__badge-item.nobel {
-    background: linear-gradient(
-        90deg,
-        #4d2630 0%,
-        #532c36 19.79%,
-        #230c13 58.34%,
-        #28282f 100.01%
-    );
-    border-radius: 10px;
-}
-
-.banner-doctor__badge-item.inv {
-    background: linear-gradient(
-        90deg,
-        #4e2085 0%,
-        #3d186a 41.15%,
-        #28163f 100.01%
-    );
-    border-radius: 10px;
-}
-
 .banner-doctor__items {
     display: flex;
     justify-content: space-between;
@@ -77,10 +31,6 @@
 }
 
 @media (max-width: 767px) {
-    .banner-doctor__badge {
-        display: block;
-    }
-
     .banner-doctor__span {
         display: none;
     }

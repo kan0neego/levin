@@ -1098,6 +1098,17 @@
     display: none;
 }
 
+@media (max-width: 1024px) {
+    body .sidebar.sidebar_active {
+        height: calc(100vh - 68px);
+        height: calc(100dvh - 68px);
+        bottom: auto;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
 /* === faq-swiper-sidebar (from style.css) === */
 
 /* TEMP */
