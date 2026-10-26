@@ -1742,8 +1742,9 @@ iframe .ytp-large-play-button {
 
     box-sizing: border-box;
 
-    height: 75dvh;
-    min-height: 767px;
+    padding-top: 40px;
+
+    min-height: 75dvh;
     max-height: 1046px;
     background-position-x: 0;
 
@@ -1753,6 +1754,7 @@ iframe .ytp-large-play-button {
 
     @media screen and (max-width: 767px) {
         padding-bottom: 32px;
+        padding-top: 20px;
     }
 
     @media screen and (max-width: 640px) {
