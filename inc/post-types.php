@@ -478,16 +478,6 @@ function my_acf_init_block_types() {
         ));
 
         acf_register_block_type(array(
-            'name'              => 'doctor-single',
-            'title'             => __('Один врач'),
-            'description'       => __('Блок с одним врачом'),
-            'render_template'   => 'template-parts/blocks/doctor-single/doctor-single.php',
-            'category'          => 'formatting',
-            'icon'              => 'businessman',
-            'keywords'          => array( 'doctor', 'врач' ),
-        ));
-
-        acf_register_block_type(array(
             'name'              => 'price-single',
             'title'             => __('Один прайс'),
             'description'       => __('Произвольный аккордеон с ценами'),

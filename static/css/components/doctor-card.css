@@ -17,13 +17,15 @@
     justify-content: center;
     position: relative;
 
-    &::before {
-        display: block;
-        content: "";
-        background: url("../img/dc-prose-bg.svg") no-repeat center;
-        background-size: contain;
-        position: absolute;
-        inset: 0;
+    &:has(span) {
+        &::before {
+            display: block;
+            content: "";
+            background: url("../img/dc-prose-bg.svg") no-repeat center;
+            background-size: contain;
+            position: absolute;
+            inset: 0;
+        }
     }
 }
 

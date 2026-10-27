@@ -39,7 +39,6 @@ function allowed_block_types( $allowed_blocks, $editor_context ) {
         'lazyblock/stages-big',
         'lazyblock/cards-wide',
         'acf/standards',
-        'acf/doctor-single',
         'acf/price-single'
     );
  
