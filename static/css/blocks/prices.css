@@ -428,9 +428,9 @@ a.prices__heading:hover {
     content: "";
     position: absolute;
     top: 0px;
-    bottom: -6px;
+    bottom: 0px;
     left: calc(50% - 6px);
-    right: -6px;
+    right: 0px;
     border: 6px solid #20a1e5;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
