@@ -65,9 +65,9 @@
     --list-gutter-mobile: 24px;
     --paragraph-gutter: 15px;
     --paragraph-gutter-mobile: 12px;
-    --list-heading-gutter: 32px;
+    --list-heading-gutter: 30px;
     --list-heading-gutter-mobile: 24px;
-    --paragraph-content-gutter: 60px;
+    --paragraph-content-gutter: 30px;
     --paragraph-content-gutter-mobile: 30px;
 
     & > *:is(b, strong) {
