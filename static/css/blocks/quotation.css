@@ -64,8 +64,12 @@
     margin: 0 0 36px;
     font-family: var(--third-family);
     font-weight: 300;
-    font-size: 56px;
-    line-height: 76px;
+    font-size: clamp(44px, calc(44px + 12 * (100vw - 1280px) / 500), 56px);
+    line-height: clamp(
+        131.818%,
+        131.818% + (135.714% - 131.818%) * (100vw - 1280px) / 500px,
+        135.714%
+    );
     letter-spacing: -0.01em;
 }
 
@@ -77,8 +81,12 @@
     font-family: var(--font-family);
     margin: 0 0 36px;
     font-weight: 300;
-    font-size: 26px;
-    line-height: 40px;
+    font-size: clamp(22px, calc(22px + 4 * (100vw - 1280px) / 500), 26px);
+    line-height: clamp(
+        153.846%,
+        154.545% - (154.545% - 153.846%) * (100vw - 1280px) / 500px,
+        154.545%
+    );
 }
 
 .quotation__text strong {
@@ -151,14 +159,10 @@
     }
 
     .quotation__title {
-        font-size: 44px;
-        line-height: 58px;
         margin-bottom: 28px;
     }
 
     .quotation__text {
-        font-size: 22px;
-        line-height: 34px;
         margin-bottom: 28px;
     }
 
