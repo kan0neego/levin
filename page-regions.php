@@ -25,7 +25,7 @@ get_header(); ?>
     <?php get_template_part('template-parts/regions/quotation'); ?>
 </section>
 
-<section class="section-services" id="services">
+<section class="treatment-cards" id="services">
     <?php get_template_part('template-parts/regions/services'); ?>
 </section>
 

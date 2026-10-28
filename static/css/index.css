@@ -91,6 +91,7 @@
 @import "./blocks/banner-doctor.css";
 @import "./blocks/banner-contact.css";
 @import "./blocks/quotation.css";
+@import "./blocks/treatment-cards.css";
 
 @import "./pages/landing.css";
 @import "./components/uiscom-check.css";
