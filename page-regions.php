@@ -21,19 +21,29 @@ get_header(); ?>
     <?php get_template_part('template-parts/regions/banner-regions'); ?>
 </header>
 
-<?php get_template_part('template-parts/regions/quotation'); ?>
+<section id="quotation" class="quotation">
+    <?php get_template_part('template-parts/regions/quotation'); ?>
+</section>
 
-<?php get_template_part('template-parts/regions/services'); ?>
+<section class="section-services" id="services">
+    <?php get_template_part('template-parts/regions/services'); ?>
+</section>
 
-<?php get_template_part('template-parts/regions/start-steps'); ?>
+<section class="section-start-steps" id="start">
+    <?php get_template_part('template-parts/regions/start-steps'); ?>
+</section>
 
-<?php get_template_part('template-parts/regions/consult'); ?>
+<div class="section-consul wrap">
+    <?php get_template_part('template-parts/regions/consult'); ?>
+</div>
 
-<?php get_template_part('template-parts/regions/reasons'); ?>
+<section class="section-reasons mb-0" id="reasons">
+    <?php get_template_part('template-parts/regions/reasons'); ?>
+</section>
 
-<?php get_template_part( 'template-parts/sections/nobel' ); ?>
+<?php get_template_part('template-parts/sections/nobel'); ?>
 
-<?php get_template_part( 'template-parts/sections/warranty' ); ?>
+<?php get_template_part('template-parts/sections/warranty'); ?>
 
 <script>
     document.addEventListener(`DOMContentLoaded`, () => {

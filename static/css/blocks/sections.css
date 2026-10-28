@@ -54,43 +54,6 @@
     text-align: center;
 }
 
-.title-quotation {
-    position: relative;
-    z-index: 1;
-}
-
-.title-quotation::before {
-    position: absolute;
-    content: "";
-    background: url(../../img/quote.svg) no-repeat center center;
-    background-size: contain;
-    -webkit-transform: translate(-50%, -100%);
-    transform: translate(-50%, -100%);
-    z-index: 0;
-    top: -10px;
-    width: 26px;
-    height: 22px;
-    left: 50%;
-}
-
-@media screen and (min-width: 768px) {
-    .title-quotation::before {
-        top: -30px;
-        width: 54px;
-        height: 43px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .title-quotation::before {
-        width: 34px;
-        height: 23px;
-        left: 0;
-        -webkit-transform: translate(0, -100%);
-        transform: translate(0, -100%);
-    }
-}
-
 .banner-nav {
     display: flex;
     flex-direction: row;
