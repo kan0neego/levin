@@ -65,6 +65,7 @@
 
 /* 31. Подвал */
 @import "./layout/footer-old.css";
+@import "./layout/container.css";
 
 /* 32–39. Старая, частично перенесённая разметка */
 @import "./blocks/gallery.css";
@@ -89,6 +90,7 @@
 @import "./blocks/banner-rating.css";
 @import "./blocks/banner-doctor.css";
 @import "./blocks/banner-contact.css";
+@import "./blocks/quotation.css";
 
 @import "./pages/landing.css";
 @import "./components/uiscom-check.css";

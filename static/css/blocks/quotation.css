@@ -1,0 +1,259 @@
+.quotation {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: #2f343b;
+}
+
+.quotation__bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.quotation__bg::before {
+    content: "";
+    position: absolute;
+    left: -6%;
+    top: 72%;
+    width: 479px;
+    height: 448px;
+    background: #4a6a87;
+    filter: blur(225px);
+}
+
+.quotation__bg::after {
+    content: "";
+    position: absolute;
+    left: 28%;
+    top: 8%;
+    width: 81%;
+    height: 85%;
+    background: url(../../src/img/quotation/molecule.webp) center / cover
+        no-repeat;
+    opacity: 0.4;
+    filter: blur(28px);
+    transform: scaleY(-1);
+}
+
+.quotation__layout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 712px) minmax(260px, 561px);
+    column-gap: 48px;
+    align-items: end;
+    justify-content: space-between;
+    padding-top: 96px;
+}
+
+.quotation__content {
+    padding-bottom: 40px;
+}
+
+.quotation__mark {
+    display: block;
+    width: 54px;
+    height: 43px;
+    margin: 0 0 30px;
+    transform: rotate(180deg);
+}
+
+.quotation__title {
+    max-width: 712px;
+    margin: 0 0 36px;
+    font-family: var(--third-family);
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 76px;
+    letter-spacing: -0.01em;
+}
+
+.quotation__title-lead {
+    font-weight: 500;
+}
+
+.quotation__text {
+    font-family: var(--font-family);
+    margin: 0 0 36px;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.quotation__text strong {
+    font-weight: 400;
+}
+
+.quotation__footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px 48px;
+    max-width: 712px;
+}
+
+.quotation__name {
+    margin: 0;
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.quotation__role {
+    max-width: 356px;
+    margin: 4px 0 0;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.quotation__signature {
+    display: block;
+    flex: 0 0 auto;
+    width: 184px;
+    height: auto;
+    margin-top: -4px;
+}
+
+.quotation__media {
+    position: relative;
+    justify-self: end;
+    width: min(100%, 561px);
+}
+
+.quotation__ring {
+    position: absolute;
+    z-index: 0;
+    left: -3.6%;
+    top: 6.9%;
+    width: 107%;
+    max-width: none;
+    height: auto;
+    pointer-events: none;
+}
+
+.quotation__photo {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(-10px 20px 80px rgba(0, 0, 0, 0.1));
+}
+
+@media screen and (max-width: 1280px) {
+    .quotation__layout {
+        column-gap: 32px;
+        padding-top: 72px;
+    }
+
+    .quotation__title {
+        font-size: 44px;
+        line-height: 58px;
+        margin-bottom: 28px;
+    }
+
+    .quotation__text {
+        font-size: 22px;
+        line-height: 34px;
+        margin-bottom: 28px;
+    }
+
+    .quotation__media {
+        width: min(100%, 460px);
+    }
+
+    .quotation__signature {
+        width: 156px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .quotation__bg::before {
+        width: 320px;
+        height: 280px;
+        filter: blur(120px);
+    }
+
+    .quotation__bg::after {
+        left: 10%;
+        width: 110%;
+        filter: blur(18px);
+    }
+
+    .quotation__layout {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+        padding-top: 48px;
+    }
+
+    .quotation__title {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .quotation__text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .quotation__media {
+        width: min(100%, 420px);
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .quotation__layout {
+        padding-top: 36px;
+    }
+
+    .quotation__content {
+        padding-bottom: 20px;
+    }
+
+    .quotation__mark {
+        width: 36px;
+        height: 29px;
+        margin-bottom: 16px;
+    }
+
+    .quotation__title {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.3px;
+        margin-bottom: 20px;
+    }
+
+    .quotation__text {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 24px;
+    }
+
+    .quotation__name {
+        font-size: 14px;
+        line-height: 120%;
+    }
+
+    .quotation__footer {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .quotation__name {
+        font-size: 18px;
+    }
+
+    .quotation__signature {
+        width: 132px;
+        margin-left: auto;
+    }
+
+    .quotation__media {
+        width: min(100%, 320px);
+    }
+}
