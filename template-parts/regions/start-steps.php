@@ -1,5 +1,4 @@
-<div class="section-start-steps" id="start">
-    <div class="section-start-steps__wrap wrap">
+<div class="section-start-steps__wrap wrap">
         <div class="section-start-steps__header section-header section-header--center">
             <h2 class="section-start-steps__title section-header__title">
                 С чего начать?
@@ -94,5 +93,4 @@
                 </div>
             </li>
         </ul>
-    </div>
 </div>

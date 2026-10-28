@@ -1,36 +1,32 @@
 <?php $directory = get_template_directory_uri() . '/src/'; ?>
-<div id="quotation" class="banner-quotation-new banner-quotation--regions section--smoke">
-  <div class="banner-quotation-new__wrap wrap">
-    <div class="banner-quotation-new__text-side">
-      <h2 class="banner-quotation-new__title title-quotation">
-        Мы <strong>каждый день</strong> лечим пациентов из самых дальних уголков России и других стран
-      </h2>
-      <div class="banner-quotation-new__text-box">
-        <p>
-          Лечебный процесс организован из соображений <strong>оптимизации числа посещений</strong> пациентом медицинского учреждения.
-        </p>
-      </div>
-      <div class="banner-quotation-new__footer">
-        <p class="banner-quotation-new__name">Левин Дмитрий Валерьевич</p>
-        <p class="banner-quotation-new__votation">Главный врач и основатель ЦПС «Доктор Левин»</p>
-        <div class="banner-quotation-new__signature signature">
-          <img src="<?php echo $directory; ?>img/signature.svg" alt="Левин">
+<div class="quotation__bg" aria-hidden="true"></div>
+<div class="container-2xl">
+    <div class="quotation__layout">
+        <div class="quotation__content">
+            <img class="quotation__mark" src="<?php echo $directory; ?>img/quotation/quote.svg" alt="" width="54"
+                height="43">
+            <h2 class="quotation__title">
+                <span class="quotation__title-lead">Цель всей моей жизни</span> — создать лучшую челюстно-лицевую
+                клинику в мире
+            </h2>
+            <p class="quotation__text">
+                Филигранное <strong>планирование и комплексный подход</strong> к сохранению здоровья и качеству жизни
+                пациента
+            </p>
+            <div class="quotation__footer">
+                <div class="quotation__author">
+                    <p class="quotation__name">Левин Дмитрий Валерьевич</p>
+                    <p class="quotation__role">Главный врач и основатель ЦПС «Доктор Левин»</p>
+                </div>
+                <img class="quotation__signature" src="<?php echo $directory; ?>img/quotation/signature.svg" alt=""
+                    width="187" height="158">
+            </div>
         </div>
-        <!-- /.banner-quotation__signature signature -->
-      </div>
-      <!-- /.banner-quotation__footer -->
+        <div class="quotation__media">
+            <img class="quotation__ring" src="<?php echo $directory; ?>img/quotation/ring.svg" alt="" width="600"
+                height="599">
+            <img class="quotation__photo" src="<?php echo $directory; ?>img/quotation/portrait.webp"
+                alt="Левин Дмитрий Валерьевич" width="838" height="1024" loading="lazy">
+        </div>
     </div>
-    <!-- /.banner-quotation__text-side -->
-    <div class="banner-quotation-new__img-side">
-      <picture class="picture">
-        <source type="image/png" media="(min-width: 992px)" src="<?php echo $directory; ?>img/banner-quotation-bg.png">
-        <source type="image/png" media="(min-width: 768px)" src="<?php echo $directory; ?>img/banner-quotation-bg.png">
-        <source type="image/svg+xml" src="<?php echo $directory; ?>img/banner-quotation-bg.png">
-        <img alt="Левин Дмитрий Валерьевич" class="picture__img" loading="lazy" src="<?php echo $directory; ?>img/banner-quotation-bg.png" src="<?php echo $directory; ?>img/banner-quotation-bg.png">
-      </picture>
-    </div>
-    <!-- /.banner-quotation__img-side -->
-  </div>
-  <!-- /.banner-quotation__wrap  -->
 </div>
-<!-- /.banner-quotation -->

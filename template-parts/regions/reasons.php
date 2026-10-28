@@ -1,5 +1,4 @@
-<div class="section-reasons mb-0" id="reasons">
-    <div class="section-reasons__wrap wrap">
+<div class="section-reasons__wrap wrap">
         <div class="section-reasons__header section-header section-header--center">
             <h2 class="section-reasons__title section-header__title">Почему выбирают именно нас</h2>
             <h3 class="section-reasons__subtitle section-header__subtitle">ЦПС «Доктор Левин» — уникальная клиника</h3>
@@ -120,5 +119,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>

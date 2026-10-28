@@ -1,6 +1,5 @@
 <?php $directory = get_template_directory_uri() . '/src/'; ?>
-<div class="section-consul wrap">
-  <div class="section-consult__wrap ">
+<div class="section-consult__wrap ">
     <div class="consult-box">
       <div class="consult-box__content">
         <div class="consult-box__header">
@@ -50,7 +49,5 @@
       <!-- /.consult-box__img-side -->
     </div>
     <!-- /.consult-box -->
-  </div>
-  <!-- /.consult-box__wrap  -->
 </div>
-<!-- /.consult-box -->
+<!-- /.consult-box__wrap  -->

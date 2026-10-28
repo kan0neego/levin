@@ -1,6 +1,5 @@
 <?php $directory = get_template_directory_uri() . '/src/'; ?>
-<div class="section-services" id="services">
-  <div class="section-services__wrap wrap">
+<div class="section-services__wrap wrap">
     <div class="section-services__header section-header section-header--center">
       <h2 class="section-services__title section-header__title">
         Наши услуги
@@ -100,7 +99,5 @@
       <!-- /.service-box -->
     </div>
     <!-- /.services-list -->
-  </div>
-  <!-- /.section-services__wrap  -->
 </div>
-<!-- /.section-services -->
+<!-- /.section-services__wrap  -->
