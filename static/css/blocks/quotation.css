@@ -157,7 +157,7 @@
 
         position: absolute;
         right: 0;
-        bottom: 10;
+        bottom: 10px;
         z-index: 20;
     }
 }
