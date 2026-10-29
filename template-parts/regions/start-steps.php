@@ -1,96 +1,72 @@
-<div class="section-start-steps__wrap wrap">
-        <div class="section-start-steps__header section-header section-header--center">
-            <h2 class="section-start-steps__title section-header__title">
-                С чего начать?
-            </h2>
-            <h3 class="section-start-steps__subtitle section-header__subtitle">
-                три простых шага к своей идеальной улыбке
-            </h3>
-        </div>
-        <ul class="start-steps-list">
-            <li class="start-steps-item">
-                <div class="start-steps-item__img-box">
-                    <picture class="start-steps-item__picture">
-                        <img src="<?php echo get_template_directory_uri(); ?>/src/img/start-step-consult.png" loading="lazy" alt="">
-                    </picture>
-                    <div class="start-steps-item__tagline">
-                        <p class="start-steps-item__num"></p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/src/img/steps-arrow.svg" alt="" loading="lazy" class="start-steps-item__icon">
-                    </div>
+<?php
+$directory = get_template_directory_uri() . '/src/';
+$start_steps = [
+    [
+        'title' => 'Дистанционная диагностика',
+        'points' => ['Сделайте <strong>рентген-снимок КТ</strong>', '<strong>Вышлите</strong> снимок на электронную почту Центра', 'Подробно <strong>опишите в письме</strong>, что Вас беспокоит'],
+    ],
+    [
+        'title' => 'Предварительное заключение',
+        'points' => ['<strong>Доктор созвонится с Вами</strong> и задаст уточняющие вопросы', 'Составляем один или несколько планов лечения', 'Утверждаем с Вами окончательную тактику и стратегию'],
+    ],
+    [
+        'title' => 'Планирование лечения',
+        'points' => ['Планируем лечение в рамках <strong>одного операционного дня</strong>', 'Согласовываем дату, время и финансовые вопросы'],
+    ],
+];
+?>
+
+<div class="grid-list">
+    <?php foreach ($start_steps as $step_index => $step) : ?>
+    <div class="grid-list-item">
+        <article class="start-cards__card">
+            <?php if ($step_index === 0) : ?>
+            <div class="start-cards__media" aria-hidden="true">
+                <img class="start-cards__photo" src="<?php echo $directory; ?>img/start-cards/consult-bg.webp" alt=""
+                    width="2500" height="1667">
+                <div class="start-cards__plate">
+                    <p class="start-cards__num">.1</p>
+                    <img class="start-cards__arrow" src="<?php echo $directory; ?>img/start-cards/arrow.svg" alt=""
+                        width="23" height="44">
                 </div>
-                <div class="start-steps-item__content">
-                    <p class="start-steps-item__title">
-                        Дистанционная дианостика
-                    </p>
-                    <div class="start-steps-item__text-box">
-                        <ul>
-                            <li>
-                                Сделайте <strong>рентген-снимок КТ</strong>
-                            </li>
-                            <li>
-                                <strong>Вышлите</strong> снимок на электронную почту Центра
-                            </li>
-                            <li>
-                                Подробно <strong>опишите в письме</strong>, что Вас беспокоит
-                            </li>
-                        </ul>
-                    </div>
+                <div class="start-cards__fade"></div>
+            </div>
+            <?php elseif ($step_index === 1) : ?>
+            <div class="start-cards__media" aria-hidden="true">
+                <img class="start-cards__photo" src="<?php echo $directory; ?>img/start-cards/plan.webp" alt=""
+                    width="683" height="1024">
+                <div class="start-cards__plate">
+                    <p class="start-cards__num">.2</p>
+                    <img class="start-cards__arrow" src="<?php echo $directory; ?>img/start-cards/arrow.svg" alt=""
+                        width="23" height="44">
                 </div>
-            </li>
-            <li class="start-steps-item">
-                <div class="start-steps-item__img-box">
-                    <picture class="start-steps-item__picture">
-                        <img src="<?php echo get_template_directory_uri(); ?>/src/img/start-step-plan.png" loading="lazy" alt="">
-                    </picture>
-                    <div class="start-steps-item__tagline">
-                        <p class="start-steps-item__num"></p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/src/img/steps-arrow.svg" alt="" loading="lazy" class="start-steps-item__icon">
-                    </div>
+                <div class="start-cards__fade"></div>
+            </div>
+            <?php else : ?>
+            <div class="start-cards__media" aria-hidden="true">
+                <img class="start-cards__photo" src="<?php echo $directory; ?>img/start-cards/visit.webp" alt=""
+                    width="1024" height="683">
+                <div class="start-cards__plate">
+                    <p class="start-cards__num">.3</p>
+                    <img class="start-cards__logo" src="<?php echo $directory; ?>img/start-cards/logo.svg" alt=""
+                        width="54" height="54">
                 </div>
-                <div class="start-steps-item__content">
-                    <p class="start-steps-item__title">
-                        Предварительное заключение
-                    </p>
-                    <div class="start-steps-item__text-box">
-                        <ul>
-                            <li>
-                                <strong>Доктор созвонится с Вами</strong> и задаст уточняющие вопросы
-                            </li>
-                            <li>
-                                Составляем один или несколько планов лечения
-                            </li>
-                            <li>
-                                Утверждаем с Вами окончательную тактику и стратегию
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="start-steps-item">
-                <div class="start-steps-item__img-box">
-                    <picture class="start-steps-item__picture">
-                        <img src="<?php echo get_template_directory_uri(); ?>/src/img/start-step-run.png" loading="lazy" alt="">
-                    </picture>
-                    <div class="start-steps-item__tagline">
-                        <p class="start-steps-item__num"></p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/src/img/steps-logo.svg" alt="" loading="lazy" class="start-steps-item__icon">
-                    </div>
-                </div>
-                <div class="start-steps-item__content">
-                    <p class="start-steps-item__title">
-                        Планирование лечения 
-                    </p>
-                    <div class="start-steps-item__text-box">
-                        <ul>
-                            <li>
-                                Планируем лечение в рамках <strong>одного операционного дня</strong>
-                            </li>
-                            <li>
-                                Согласовываем дату, время и финансовые вопросы
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-        </ul>
+                <div class="start-cards__fade"></div>
+            </div>
+            <?php endif; ?>
+            <div class="start-cards__body">
+                <h3 class="start-cards__title"><?php echo esc_html($step['title']); ?></h3>
+                <ul class="start-cards__list">
+                    <?php foreach ($step['points'] as $point) : ?>
+                    <li>
+                        <img src="<?php echo $directory; ?>img/start-cards/check.svg" alt="" width="17"
+                            height="17">
+                        <span><?php echo wp_kses($point, ['strong' => []]); ?></span>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        </article>
+    </div>
+    <?php endforeach; ?>
 </div>

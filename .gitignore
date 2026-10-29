@@ -4,6 +4,8 @@ Thumbs.db
 *.swo
 .idea/
 
+src/
+
 vendor/
 node_modules/
 log/

@@ -1,26 +1,34 @@
-<div class="page__container page__container_full" id="nobelcenter" style="background-color: #FDFCFC;">
-    <div class="section-block">
-        <div class="section-col">
-            <div class="section-image">
-                <img src="<?php bloginfo('template_url'); ?>/img/section-block.png" alt="" loading="lazy">
+<?php
+$directory = get_template_directory_uri() . '/src/';
+$items = ['Фирменная пожизненная гарантия Dr. Levin Lifetime Warranty', 'Полный пакет оригинальных лекарственных препаратов', 'Письменные послеоперационные рекомендации', 'Паспорт Nobel Biocare на каждый установленный имплантат'];
+?>
+
+<div class="nobel" id="nobelcenter">
+    <div class="container-2xl">
+        <div class="nobel__layout">
+            <div class="nobel__media">
+                <span class="nobel__glow" aria-hidden="true"></span>
+                <div class="nobel__frame">
+                    <img class="nobel__photo" src="<?php echo esc_url($directory . 'img/nobel/certificate.webp'); ?>"
+                        alt="Сертификат Центра клинического мастерства Nobel Biocare" width="909" height="642"
+                        loading="lazy" decoding="async">
+                </div>
             </div>
-        </div>
-        <div class="section-col">
-            <div class="section-name">
-                Клиника «Доктор Левин»<br>— Центр клинического мастерства Nobel Biocare
+            <div class="nobel__copy">
+                <h2 class="nobel__title">Центр клинического<br>мастерства Nobel Care</h2>
+                <p class="nobel__text">
+                    В нашем Центре используются только оригинальные<br>
+                    Оригинальные комплектующие — гарант долгой службы<br>
+                    Мы не имеем права рисковать и использовать неоригинальные<br>
+                    наших врачей по установке имплантов
+                </p>
+                <ul class="nobel__list">
+                    <?php foreach ($items as $item) : ?>
+                    <li><?php echo esc_html($item); ?></li>
+                    <?php endforeach; ?>
+                </ul>
+                <a class="nobel__btn" href="<?php echo esc_url(home_url('/implanty-nobel-biocare/')); ?>">Подробнее</a>
             </div>
-            <p class="section-text">
-                С 2004 года ЦПС «Доктор Левин» — Центр клинического мастерства Nobel Biocare в Восточной
-                Европе.
-            </p>
-            <ul class="section-list">
-                <li class="section-list-item">Клиника сотрудничает с Nobel Biocare дольше 10 лет</li>
-                <li class="section-list-item">Врачи ежегодно повышают квалификацию на базе образовательных программ компании Nobel Biocare</li>
-                <li class="section-list-item">Процент отторжения имплантатов не превышает 2% за 10 лет</li>
-            </ul>
-            <!--<div class="section-button">
-            Подробнее
-            </div>-->
         </div>
     </div>
 </div>

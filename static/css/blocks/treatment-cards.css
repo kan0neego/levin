@@ -1,7 +1,3 @@
-.treatment-cards {
-    margin: 160px 0 80px;
-}
-
 .treatment-cards .grid-list {
     --item-width: 33.333%;
     --col-gap: 11px;
@@ -168,7 +164,9 @@
     line-height: 120%;
     text-align: center;
     text-decoration: none;
-    transition: background 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        background 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .treatment-cards__more:hover {
@@ -208,7 +206,6 @@
         --item-width: 100%;
         --col-gap: 0px;
         --row-gap: 8px;
-        max-width: 480px;
         margin-inline: auto;
     }
 }

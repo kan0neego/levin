@@ -1,29 +1,29 @@
 .container-box,
 .container-2xl {
+    --gap: 48px;
     width: 100%;
 
     margin-left: auto;
     margin-right: auto;
-    padding-left: 48px;
-    padding-right: 48px;
+
+    padding-left: var(--gap);
+    padding-right: var(--gap);
 }
 
 @media screen and (max-width: 768px) {
     .container-box,
     .container-2xl {
-        padding-left: 32px;
-        padding-right: 32px;
+        --gap: 32px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .container,
     .container-2xl {
-        padding-left: 18px;
-        padding-right: 18px;
+        --gap: 18px;
     }
 }
 
 .container-2xl {
-    max-width: 1484px;
+    max-width: calc(1484px + (var(--gap) * 2));
 }

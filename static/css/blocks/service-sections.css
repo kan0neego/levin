@@ -69,7 +69,8 @@
         content: "";
         right: 0;
         bottom: 0;
-        background: url(../../src/img/therapy-list-before.svg) no-repeat bottom right;
+        background: url(../../src/img/therapy-list-before.svg) no-repeat bottom
+            right;
         background-size: contain;
         max-width: 275px;
         width: 100%;
@@ -122,8 +123,16 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-shadow: 9px 9px 16px #fff3e7, -9px -9px 16px rgba(251, 239, 228, 0.5), inset 1px 2px 4px rgba(255, 255, 255, 0.5), inset -3px 1px 4px rgba(255, 255, 255, 0.3);
-    box-shadow: 9px 9px 16px #fff3e7, -9px -9px 16px rgba(251, 239, 228, 0.5), inset 1px 2px 4px rgba(255, 255, 255, 0.5), inset -3px 1px 4px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow:
+        9px 9px 16px #fff3e7,
+        -9px -9px 16px rgba(251, 239, 228, 0.5),
+        inset 1px 2px 4px rgba(255, 255, 255, 0.5),
+        inset -3px 1px 4px rgba(255, 255, 255, 0.3);
+    box-shadow:
+        9px 9px 16px #fff3e7,
+        -9px -9px 16px rgba(251, 239, 228, 0.5),
+        inset 1px 2px 4px rgba(255, 255, 255, 0.5),
+        inset -3px 1px 4px rgba(255, 255, 255, 0.3);
 }
 
 .therapy-box__icon {
@@ -136,7 +145,9 @@
 }
 
 .therapy-box__value {
-    font: 400 1.75rem SFProDisplay, sans-serif;
+    font:
+        400 1.75rem SFProDisplay,
+        sans-serif;
 }
 
 .section-dosage {
@@ -210,7 +221,9 @@
 }
 
 .dosage-box__title {
-    font: 400 1.375rem SFProDisplay, sans-serif;
+    font:
+        400 1.375rem SFProDisplay,
+        sans-serif;
     margin: 0 0 0.3125rem;
 }
 
@@ -320,7 +333,8 @@
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(../../src/img/thoughts-bubble-before.svg) no-repeat center center;
+    background: url(../../src/img/thoughts-bubble-before.svg) no-repeat center
+        center;
 }
 
 .thoughts-bubble__picture::after {
@@ -331,8 +345,20 @@
     bottom: 0;
     height: 100px;
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(54.17%, rgba(255, 255, 255, 0.72)), to(#fff));
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.72) 54.17%, #fff 100%);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(255, 255, 255, 0)),
+        color-stop(54.17%, rgba(255, 255, 255, 0.72)),
+        to(#fff)
+    );
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.72) 54.17%,
+        #fff 100%
+    );
 }
 
 .thoughts-bubble__picture .picture__img {
@@ -360,7 +386,9 @@
 }
 
 .thoughts-bubble__description {
-    font: 0.875rem SFProDisplay, sans-serif;
+    font:
+        0.875rem SFProDisplay,
+        sans-serif;
     color: #767676;
 }
 
@@ -451,7 +479,9 @@
 }
 
 .section-convenient-platforms__footer {
-    font: 0.875rem/1.6 SFProDisplay, sans-serif;
+    font:
+        0.875rem/1.6 SFProDisplay,
+        sans-serif;
     text-align: center;
     color: #767676;
 }
@@ -580,8 +610,22 @@
     width: 100%;
     left: 0;
     bottom: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 25, 46, 0)), color-stop(52.94%, rgba(1, 25, 46, 0.59)), color-stop(71.48%, rgba(1, 25, 46, 0.83)), color-stop(97.62%, #01192e));
-    background: linear-gradient(180deg, rgba(1, 25, 46, 0) 0, rgba(1, 25, 46, 0.59) 52.94%, rgba(1, 25, 46, 0.83) 71.48%, #01192e 97.62%);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(1, 25, 46, 0)),
+        color-stop(52.94%, rgba(1, 25, 46, 0.59)),
+        color-stop(71.48%, rgba(1, 25, 46, 0.83)),
+        color-stop(97.62%, #01192e)
+    );
+    background: linear-gradient(
+        180deg,
+        rgba(1, 25, 46, 0) 0,
+        rgba(1, 25, 46, 0.59) 52.94%,
+        rgba(1, 25, 46, 0.83) 71.48%,
+        #01192e 97.62%
+    );
 }
 
 .mail-manager-box__picture .picture__img {
@@ -594,7 +638,9 @@
 }
 
 .mail-manager-box__votation {
-    font: 0.875rem SFProDisplay, sans-serif;
+    font:
+        0.875rem SFProDisplay,
+        sans-serif;
     letter-spacing: 0.04rem;
     color: #696f7c;
 }
@@ -634,7 +680,9 @@
 }
 
 .form-manager-n__accept {
-    font: 300 0.875rem SFProDisplay, sans-serif;
+    font:
+        300 0.875rem SFProDisplay,
+        sans-serif;
     letter-spacing: 0.01rem;
     color: #000;
 }
@@ -719,8 +767,20 @@
 }
 
 .start-steps-item__img-box::before {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 64, 0.87)), color-stop(75.34%, rgba(49, 54, 64, 0.22)), to(rgba(49, 54, 64, 0)));
-    background: linear-gradient(180deg, rgba(49, 54, 64, 0.87) 0, rgba(49, 54, 64, 0.22) 75.34%, rgba(49, 54, 64, 0) 100%);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(49, 54, 64, 0.87)),
+        color-stop(75.34%, rgba(49, 54, 64, 0.22)),
+        to(rgba(49, 54, 64, 0))
+    );
+    background: linear-gradient(
+        180deg,
+        rgba(49, 54, 64, 0.87) 0,
+        rgba(49, 54, 64, 0.22) 75.34%,
+        rgba(49, 54, 64, 0) 100%
+    );
     -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
     transform: matrix(1, 0, 0, -1, 0, 0);
     height: 50%;
@@ -772,7 +832,9 @@
 }
 
 .start-steps-item__num {
-    font: 300 3.875rem/1.19 SFProDisplay, sans-serif;
+    font:
+        300 3.875rem/1.19 SFProDisplay,
+        sans-serif;
     color: #fff;
 }
 
@@ -806,7 +868,9 @@
 }
 
 .start-steps-item__text-box {
-    font: 300 1.125rem SFProDisplay, sans-serif;
+    font:
+        300 1.125rem SFProDisplay,
+        sans-serif;
 }
 
 .start-steps-item__text-box b,
@@ -893,8 +957,4 @@
     .consult-human__content {
         padding: 0;
     }
-}
-
-.section-consult {
-    margin: 32px 0 0;
 }

@@ -40,14 +40,32 @@
     line-height: 1.18;
     letter-spacing: 0.07em;
     margin: 0 0 0.625rem;
+
+    &:where(.white-color *) {
+        color: #fff;
+    }
+
+    @media screen and (max-width: 640px) {
+        font-size: 28px;
+    }
 }
 
 .section-header__subtitle {
-    font:
-        300 1.625rem/1.6 "SF Pro Display",
-        sans-serif;
-    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 1.625rem;
+    line-height: 1.6;
     letter-spacing: 0.03em;
+
+    text-align: center;
+
+    &:where(.white-color *) {
+        color: #fff;
+    }
+
+    @media screen and (max-width: 640px) {
+        font-size: 18px;
+    }
 }
 
 .section-header--center {

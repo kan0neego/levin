@@ -35,6 +35,10 @@
 @import "./base/icons.css";
 @import "./base/globals.css";
 
+/* Утилиты */
+@import "./components/grid-list.css";
+@import "./components/decorators.css";
+
 /* 8–11. Навигация/каркас */
 @import "./layout/sidebar.css";
 @import "./layout/navigation.css";
@@ -92,14 +96,18 @@
 @import "./blocks/banner-contact.css";
 @import "./blocks/quotation.css";
 @import "./blocks/treatment-cards.css";
+@import "./blocks/start-cards.css";
+@import "./blocks/transfer-programs.css";
+@import "./blocks/reasons-panel.css";
+@import "./blocks/nobel.css";
 
 @import "./pages/landing.css";
 @import "./components/uiscom-check.css";
 @import "./components/case-card.css";
 @import "./components/avatar.css";
-@import "./components/grid-list.css";
 @import "./components/image.css";
 @import "./components/blog-card.css";
-@import "./components/decorators.css";
 @import "./pages/case.css";
 @import "./components/prose.css";
+
+@import "./pages/regions-page.css";

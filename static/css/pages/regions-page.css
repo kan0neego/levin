@@ -1,0 +1,10 @@
+.treatment-cards,
+.start-cards,
+.transfer-programs,
+.reason-panel {
+    margin: 160px 0;
+
+    @media screen and (max-width: 640px) {
+        margin: 80px 0;
+    }
+}

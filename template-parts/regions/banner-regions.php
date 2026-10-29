@@ -6,8 +6,10 @@ $h1 = get_field('h1');
         <?php levin_breadcrumbs(); ?>
 
         <h2 class="banner__name">
-            <?= $h1 ? $h1 : 'Пациентам <br>
-            из других регионов'; ?>
+            <?= $h1
+                ? $h1
+                : 'Пациентам <br>
+            из других регионов' ?>
         </h2>
 
         <div class="banner-page__text-box">
@@ -60,13 +62,13 @@ $h1 = get_field('h1');
             </a>
         </li>
         <li class="banner-nav__item">
-            <a href="#doctors" class="banner-nav__link">
-                Команда врачей
+            <a href="#reasons" class="banner-nav__link">
+                Почему выбирают нас
             </a>
         </li>
         <li class="banner-nav__item">
-            <a href="#reasons" class="banner-nav__link">
-                Почему выбирают нас
+            <a href="#nobel-implant" class="banner-nav__link">
+                Nobel Care
             </a>
         </li>
     </ul>

@@ -1,3 +1,5 @@
+/* TODO: Пиксели высоты встроки перевести в проценты по всему файлу */
+
 .quotation {
     position: relative;
     overflow: hidden;
@@ -37,17 +39,22 @@
 }
 
 .quotation__layout {
-    position: relative;
-    z-index: 1;
     display: grid;
-    grid-template-columns: minmax(0, 712px) minmax(260px, 561px);
+    grid-template-columns: 1.2fr 1fr;
     column-gap: 48px;
     align-items: end;
     justify-content: space-between;
+
     padding-top: 96px;
+
+    position: relative;
+    z-index: 1;
 }
 
 .quotation__content {
+    width: 100%;
+    max-width: 712px;
+
     padding-bottom: 40px;
 }
 
@@ -64,12 +71,8 @@
     margin: 0 0 36px;
     font-family: var(--third-family);
     font-weight: 300;
-    font-size: clamp(44px, calc(44px + 12 * (100vw - 1280px) / 500), 56px);
-    line-height: clamp(
-        131.818%,
-        131.818% + (135.714% - 131.818%) * (100vw - 1280px) / 500px,
-        135.714%
-    );
+    font-size: clamp(32px, calc(38px + 4 * (100vw - 1280px) / 500), 56px);
+    line-height: 1.35;
     letter-spacing: -0.01em;
 }
 
@@ -82,11 +85,7 @@
     margin: 0 0 36px;
     font-weight: 300;
     font-size: clamp(22px, calc(22px + 4 * (100vw - 1280px) / 500), 26px);
-    line-height: clamp(
-        153.846%,
-        154.545% - (154.545% - 153.846%) * (100vw - 1280px) / 500px,
-        154.545%
-    );
+    line-height: 1.55;
 }
 
 .quotation__text strong {
@@ -172,6 +171,11 @@
 
     .quotation__signature {
         width: 156px;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
     }
 }
 

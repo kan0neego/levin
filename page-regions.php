@@ -26,64 +26,61 @@ get_header(); ?>
 </section>
 
 <section class="treatment-cards" id="services">
-    <?php get_template_part('template-parts/regions/services'); ?>
+    <div class="container-2xl">
+        <div class="section-header section-header--center">
+            <h2 class="section-header__title">Наши услуги</h2>
+            <div class="section-header__subtitle">Стоматологические программы в формате «одного дня»</div>
+        </div>
+        <?php get_template_part('template-parts/regions/services'); ?>
+    </div>
 </section>
 
-<section class="section-start-steps" id="start">
-    <?php get_template_part('template-parts/regions/start-steps'); ?>
+<section class="start-cards" id="start">
+    <div class="container-2xl">
+        <div class="section-header section-header--center">
+            <h2 class="section-header__title">С чего начать?</h2>
+            <div class="section-header__subtitle">три простых шага к своей идеальной улыбке</div>
+        </div>
+        <?php get_template_part('template-parts/regions/start-steps'); ?>
+    </div>
 </section>
 
-<div class="section-consul wrap">
-    <?php get_template_part('template-parts/regions/consult'); ?>
-</div>
-
-<section class="section-reasons mb-0" id="reasons">
-    <?php get_template_part('template-parts/regions/reasons'); ?>
+<section class="section-consult">
+    <div class="container-2xl">
+        <?php get_template_part('template-parts/regions/consult'); ?>
+    </div>
 </section>
 
-<?php get_template_part('template-parts/sections/nobel'); ?>
+<section class="transfer-programs" id="programs">
+    <div class="container-2xl">
+        <div class="section-header section-header--center">
+            <h2 class="section-header__title">Программы трансфера, лечения и размещения</h2>
+            <div class="section-header__subtitle">три простых шага к своей идеальной лыбке</div>
+        </div>
+        <?php get_template_part('template-parts/regions/transfer-programs'); ?>
+    </div>
+</section>
+
+<section class="reasons-panel" id="reasons">
+    <div class="reasons-panel__bg" aria-hidden="true">
+        <span class="reasons-panel__glow reasons-panel__glow--a"></span>
+        <span class="reasons-panel__glow reasons-panel__glow--b"></span>
+        <img class="reasons-panel__molecule" src="<?php echo esc_url($directory . 'img/reasons-panel/molecule.webp'); ?>" alt="" width="1024" height="1024">
+    </div>
+
+    <div class="container-2xl">
+        <div class="section-header section-header--center white-color">
+            <h2 class="section-header__title">Почему выбирают именно нас</h2>
+            <div class="section-header__subtitle">ЦПС «Доктор Левин» — уникальная клиника</div>
+        </div>
+        <?php get_template_part('template-parts/regions/reasons-panel'); ?>
+    </div>
+</section>
+
+<section class="nobel-section" id="nobel-implant">
+    <?php get_template_part('template-parts/sections/nobel'); ?>
+</section>
 
 <?php get_template_part('template-parts/sections/warranty'); ?>
-
-<script>
-    document.addEventListener(`DOMContentLoaded`, () => {
-        const accordionContactsItems = document.querySelectorAll(`.contacts-accordion__item`)
-        accordionContactsItems && accordionContactsHandler()
-
-        function accordionContactsHandler() {
-            accordionContactsItems.forEach((element) => {
-                element.querySelector(`.contacts-accordion__header`).addEventListener(`click`, (
-                    event) => {
-                    event.target.closest(`.contacts-accordion__header`).classList.toggle(
-                        `active`)
-                    event.target.closest(`.contacts-accordion__item`).querySelector(
-                        `.contacts-accordion__content`).classList.toggle(`active`)
-                })
-            })
-        }
-
-        const accordionPathItems = document.querySelectorAll(`.accordion-path__item`)
-        accordionPathItems && accordionPathHandler(accordionPathItems)
-
-        function accordionPathHandler(items) {
-            items.forEach((element) => {
-                element.querySelector(`.accordion-path__header`).addEventListener(`click`, () => {
-                    element.classList.toggle(`active`)
-                })
-            })
-        }
-
-        const accordionItems = document.querySelectorAll(`.accordion__item`) || []
-        accordionItems && accordionHandler(accordionItems)
-
-        function accordionHandler(items) {
-            items.forEach((element) => {
-                element.querySelector(`.accordion__header`).addEventListener(`click`, () => {
-                    element.classList.toggle(`active`)
-                })
-            })
-        }
-    })
-</script>
 
 <?php get_footer();
