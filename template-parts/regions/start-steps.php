@@ -23,7 +23,7 @@ $start_steps = [
             <?php if ($step_index === 0) : ?>
             <div class="start-cards__media" aria-hidden="true">
                 <img class="start-cards__photo" src="<?php echo $directory; ?>img/start-cards/consult-bg.webp" alt=""
-                    width="2500" height="1667">
+                    width="720" height="555">
                 <div class="start-cards__plate">
                     <p class="start-cards__num">.1</p>
                     <img class="start-cards__arrow" src="<?php echo $directory; ?>img/start-cards/arrow.svg" alt=""
@@ -34,7 +34,7 @@ $start_steps = [
             <?php elseif ($step_index === 1) : ?>
             <div class="start-cards__media" aria-hidden="true">
                 <img class="start-cards__photo" src="<?php echo $directory; ?>img/start-cards/plan.webp" alt=""
-                    width="683" height="1024">
+                    width="720" height="555">
                 <div class="start-cards__plate">
                     <p class="start-cards__num">.2</p>
                     <img class="start-cards__arrow" src="<?php echo $directory; ?>img/start-cards/arrow.svg" alt=""
@@ -45,7 +45,7 @@ $start_steps = [
             <?php else : ?>
             <div class="start-cards__media" aria-hidden="true">
                 <img class="start-cards__photo" src="<?php echo $directory; ?>img/start-cards/visit.webp" alt=""
-                    width="1024" height="683">
+                    width="720" height="555">
                 <div class="start-cards__plate">
                     <p class="start-cards__num">.3</p>
                     <img class="start-cards__logo" src="<?php echo $directory; ?>img/start-cards/logo.svg" alt=""

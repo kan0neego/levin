@@ -48,8 +48,6 @@
 .start-cards__cutout {
     position: absolute;
     display: block;
-    max-width: none;
-    object-fit: cover;
 }
 
 .start-cards__cutout {
