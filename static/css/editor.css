@@ -1,21 +1,4 @@
-/* editor.css — точка входа для сборки бандла стилей блочного редактора
- * (Gutenberg) через webpack.
- *
- * Список @import повторяет прежний набор add_editor_style() из functions.php
- * (порядок каскада сохранён как был там). Пути — относительные от ЭТОГО
- * файла (static/css/); раскладка по подпапкам: base/, blocks/, components/,
- * pages/, корневой bootstrap-utils.css.
- *
- * Этот файл НЕ подключается в рантайме: webpack читает его, разрешает все
- * @import и собирает минифицированный static/css/bundle-editor.css, который
- * подключается в редактор одним add_editor_style() в functions.php.
- *
- * При добавлении/перестановке CSS для редактора: править список здесь →
- * npm run build. Сборка: cd static && npm run build (см. webpack.config.mjs).
- *
- * Отдельно (вне бандла) подключается editor-classic.css — стили TinyMCE
- * (.mce-content-body) через фильтр mce_css в inc/enqueues.php.
- */
+/* editor.css — точка входа для сборки бандла стилей блочного редактора (Gutenberg) через webpack. */
 
 @import "./base/constants.css";
 @import "./base/fonts.css";

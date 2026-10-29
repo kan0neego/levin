@@ -1,12 +1,14 @@
-/* Ссылки в статье (hover/active градиенты были мёртвым кодом —
-   ниже оставлен только реально работающий результат: color + background-image: none) */
-
+.p > a,
 .article > a,
 .article > blockquote a,
 .article > ol > li a,
 .article > p > a,
 .article > ul > li a,
-p > a {
+.is-root-container > a,
+.is-root-container > blockquote a,
+.is-root-container > ol > li a,
+.is-root-container > p > a,
+.is-root-container > ul > li a {
     color: #20a1e5;
     -webkit-transition-property: color;
     transition-property: color;
@@ -19,26 +21,18 @@ p > a {
     background-repeat: repeat-x;
     background-size: 1px 1px;
     background-image: linear-gradient(90deg, #8dc8e7 0, #8dc8e7 0);
-}
 
-.article > a:hover,
-.article > blockquote a:hover,
-.article > ol > li a:hover,
-.article > p > a:hover,
-.article > ul > li a:hover {
-    color: #1aa7f2;
-    text-decoration: none;
-    background-image: none;
-}
+    &:hover {
+        color: #1aa7f2;
+        text-decoration: none;
+        background-image: none;
+    }
 
-.article > a:active,
-.article > blockquote a:active,
-.article > ol > li a:active,
-.article > p > a:active,
-.article > ul > li a:active {
-    color: #128dce;
-    text-decoration: none;
-    background-image: none;
+    &:active {
+        color: #128dce;
+        text-decoration: none;
+        background-image: none;
+    }
 }
 
 .article > h2,

@@ -151,6 +151,17 @@
     filter: drop-shadow(-10px 20px 80px rgba(0, 0, 0, 0.1));
 }
 
+@media screen and (max-width: 1600px) {
+    .quotation__signature {
+        width: 156px;
+
+        position: absolute;
+        right: 0;
+        bottom: 10;
+        z-index: 20;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     .quotation__layout {
         column-gap: 32px;
@@ -167,15 +178,6 @@
 
     .quotation__media {
         width: min(100%, 460px);
-    }
-
-    .quotation__signature {
-        width: 156px;
-
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 20;
     }
 }
 
