@@ -202,6 +202,7 @@ ul.wp-block-list li:last-child,
     margin-bottom: 0;
 }
 
+.is-root-container ul li:before,
 .article ul li:before,
 ul.wp-block-list li::before,
 .pane ul li:before,
@@ -218,6 +219,7 @@ ul.wp-block-list li::before,
     background: #313640;
 }
 
+.is-root-container ul.white li::before,
 .article ul.white li::before {
     background-color: #fff;
 }
