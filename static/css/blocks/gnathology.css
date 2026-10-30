@@ -1385,6 +1385,48 @@
   margin: 20px 0;
 }
 
+/* Списки в карточке: редактор вставляет ul / .wp-block-list без .default-list.
+   Маркированные варианты статьи (check, plus, …) не трогаем.
+   Нижний отступ всего списка снимает > *:last-child, если после списка ничего нет. */
+.card-number__text-container > ul:is(:not([class]), .default-list, .wp-block-list) {
+  list-style-type: none;
+  margin: 20px 0 24px;
+  padding: 0;
+}
+
+.card-number__text-container ul:is(:not([class]), .default-list, .wp-block-list) li {
+  position: relative;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 165%;
+  letter-spacing: 0.02em;
+  color: var(--main-black);
+  padding-left: 16px !important;
+}
+
+.card-number__text-container ul:is(:not([class]), .default-list, .wp-block-list) li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.card-number__text-container ul:is(:not([class]), .default-list, .wp-block-list) li:last-child {
+  margin-bottom: 0;
+}
+
+.card-number__text-container ul:is(:not([class]), .default-list, .wp-block-list) li::before {
+  content: none;
+}
+
+.card-number__text-container ul:is(:not([class]), .default-list, .wp-block-list) li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--main-blue);
+}
+
 @media screen and (max-width: 767px) {
   .card-number {
     padding: 20px;

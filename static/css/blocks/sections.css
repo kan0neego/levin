@@ -2058,11 +2058,10 @@ li.allstat::before {
 
 .bn h2 {
     font-family: var(--third-family);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 34px;
     line-height: 120%;
     color: #fff;
-    text-shadow: 0px -3px 23px rgba(255, 255, 255, 0.5);
 }
 
 .bn h2 .light-font {
