@@ -59,8 +59,8 @@
     --h3-gutter-mobile: 24px;
     --h-gutter: 30px;
     --h-gutter-mobile: 24px;
-    --section-gutter: 60px;
-    --section-gutter-mobile: 32px;
+    --section-gutter: 90px;
+    --section-gutter-mobile: 30px;
     --list-gutter: 24px;
     --list-gutter-mobile: 24px;
     --paragraph-gutter: 15px;
@@ -203,7 +203,7 @@
         &:has(+ :is(h2, .grid-section)) {
             margin-bottom: var(--section-gutter);
 
-            @media screen and (max-width: 640px) {
+            @media screen and (max-width: 768px) {
                 margin-bottom: var(--section-gutter-mobile);
             }
         }

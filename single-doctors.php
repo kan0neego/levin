@@ -30,15 +30,10 @@ $DOCTOR_ID = null;
         <?php get_template_part('template-parts/doctor/hero-banner', null, ['portfolio' => $portfolio]); ?>
     </header>
 
-    <main class="page__content page__container">
-
-        <div class="post__article article">
-
-            <?php
-            the_content();
-            
-            echo $portfolio;
-            ?>
+    <main class="prose-with-sidebar">
+        <div class="prose article">
+            <?php the_content(); ?>
+            <?php echo $portfolio; ?>
 
             <?php
 

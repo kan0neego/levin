@@ -606,16 +606,6 @@ h2.wp-block-heading {
     margin-bottom: 30px;
     padding-bottom: 15px;
     position: relative;
-
-    &:not(:first-child) {
-        margin-top: 90px;
-    }
-
-    @media screen and (max-width: 768px) {
-        &:not(:first-child) {
-            margin-top: 30px;
-        }
-    }
 }
 
 h2.wp-block-heading::after {
