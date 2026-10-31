@@ -221,6 +221,12 @@ ul.wp-block-list:not([class*="is-style-"]) li::before {
 
 ol.wp-block-list li::before {
     content: counter(orderedListCounter);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: #fff;
 }
 
 ol.wp-block-list li::before,
@@ -229,17 +235,10 @@ ul.wp-block-list[class*="is-style-"] li::before {
     align-items: center;
     justify-content: center;
 
-    content: "";
-
     width: 22px;
     height: 22px;
 
     border-radius: 50%;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 22px;
-    color: #fff;
 
     background-color: #313640;
 
@@ -248,11 +247,19 @@ ul.wp-block-list[class*="is-style-"] li::before {
     top: 5px;
 }
 
-ul.wp-block-list.is-style-color-black li::before {
+ul.wp-block-list[class*="is-style-"] li::before {
+    content: "";
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 8px;
+}
+
+ul.wp-block-list.article__list_color_black li::before {
     background-color: #696f7c;
 }
 
-ul.wp-block-list.is-style-color-blue li::before {
+ul.wp-block-list.article__list_color_blue li::before {
     background-color: #20a1e5;
 }
 
@@ -279,6 +286,7 @@ ul.wp-block-list.is-style-minus li::before {
 
 ul.wp-block-list.is-style-cross li::before {
     background-image: url(../../img/unordered-list-cross.svg);
+    background-size: 14px;
 }
 
 .article__list_color_grey li::before {
