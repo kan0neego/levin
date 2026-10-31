@@ -1482,7 +1482,7 @@ img {
     margin-bottom: 0;
 }
 
-.list.list_blue li::after {
+.list.list_blue li::before {
     background: #20a1e5;
 }
 
@@ -1491,12 +1491,12 @@ ul.list li,
     padding-left: calc(5px + 15px) !important;
 }
 
-.list.white li::after {
-    background: #fff;
-}
-
 .list.white li {
     color: #fff;
+
+    &::before {
+        background: #fff;
+    }
 }
 
 /* ===== full_container (from style.css) ===== */
@@ -2051,10 +2051,6 @@ img.image-full,
 
     .banner__content hr {
         display: none;
-    }
-
-    ul li {
-        font-size: 18px;
     }
 }
 

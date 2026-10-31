@@ -10,9 +10,7 @@
 .is-root-container > p > a,
 .is-root-container > ul > li a {
     color: #20a1e5;
-    -webkit-transition-property: color;
     transition-property: color;
-    -webkit-transition-duration: 0.1s;
     transition-duration: 0.1s;
     display: inline;
     text-decoration: none;
@@ -153,18 +151,6 @@ p.wp-block-paragraph.is-style-description {
     border: 1px solid #313640;
 }
 
-.article ul,
-ul.wp-block-list,
-.list-plus,
-.list-minus {
-    font-size: 20px;
-    font-family: var(--font-family);
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-weight: 300;
-}
-
 .article ul strong {
     font-weight: 500;
 }
@@ -173,45 +159,59 @@ ul.wp-block-list,
     display: block;
 }
 
-.article ul li,
+ol.wp-block-list {
+    counter-reset: orderedListCounter;
+}
+
+.list li,
 ul.wp-block-list li,
-.list-plus li,
-.list-minus li {
-    margin-bottom: 8px;
-    line-height: 1.75;
+ol.wp-block-list li {
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 300;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    margin-bottom: 16px;
+    padding-left: calc(var(--i-size) + 16px);
+
+    line-height: 1.65;
+
     position: relative;
-    padding-left: calc(18px + 15px);
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
 }
 
-.article ul li:before,
-ul.wp-block-list li::before,
-.list-plus li::before,
-.list-minus li::before {
+ul.wp-block-list li {
+    --i-size: 5px;
+}
+
+ul.wp-block-list[class*="is-style-"] li,
+ol.wp-block-list li {
+    --i-size: 22px;
+}
+
+ol.wp-block-list > li {
+    counter-increment: orderedListCounter;
+}
+
+.list li:before,
+ul.wp-block-list:not([class*="is-style-"]) li::before {
     content: "";
-    left: 0;
-}
 
-.article ul li:last-child,
-ul.wp-block-list li:last-child,
-.list-plus li:last-child,
-.list-minus li:last-child {
-    margin-bottom: 0;
-}
-
-.is-root-container ul li:before,
-.article ul li:before,
-ul.wp-block-list li::before,
-.pane ul li:before,
-.list-plus li::before,
-.list-minus li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 14px;
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background: #313640;
+
+    position: absolute;
+    left: 0;
+    top: 14px;
 }
 
 .is-root-container ul.white li::before,
@@ -219,182 +219,71 @@ ul.wp-block-list li::before,
     background-color: #fff;
 }
 
-.article .pane ul.article__list_check:not(.roadmap) li {
-    padding-left: calc(18px + 15px) !important;
+ol.wp-block-list li::before {
+    content: counter(orderedListCounter);
 }
 
-.article ul.article__list_color_black li:before,
-ul.wp-block-list.is-style-color-black li::before,
-ul.wp-block-list.article__list_color_black li::before {
+ol.wp-block-list li::before,
+ul.wp-block-list[class*="is-style-"] li::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    content: "";
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: #fff;
+
+    background-color: #313640;
+
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+ul.wp-block-list.is-style-color-black li::before {
     background-color: #696f7c;
 }
 
-.article ul.article__list_color_blue li:before,
-ul.wp-block-list.is-style-color-blue li::before,
-ul.wp-block-list.article__list_color_blue li::before,
-.list-plus.article__list_color_blue li::before {
+ul.wp-block-list.is-style-color-blue li::before {
     background-color: #20a1e5;
 }
 
-.article ul.article__list_roundplus li:before,
-ul.wp-block-list.is-style-roundplus li::before,
-.list-plus li::before {
-    display: block;
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    border-radius: 50%;
-    background-image: url(../../img/unordered-list-roundplus.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    top: calc((1.75em - 18px) / 2);
-    left: 0;
+ul.wp-block-list.is-style-check li::before {
+    background-image: url(../../img/unordered-list-check.svg);
 }
 
-.article ul.article__list_roundminus li:before,
+ul.wp-block-list.is-style-roundplus li::before {
+    background-image: url(../../img/unordered-list-roundplus.svg);
+}
+
 ul.wp-block-list.is-style-roundminus li::before,
 .list-minus li::before {
-    display: block;
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    border-radius: 50%;
     background-image: url(../../img/unordered-list-roundminus.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    top: calc((1.75em - 18px) / 2);
-    left: 0;
 }
 
-.article ul.article__list_plus li:before,
-ul.wp-block-list.is-style-plus li::before,
-ul.article__list_plus li:before {
-    display: block;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: 8px;
-    border-radius: 50%;
+ul.wp-block-list.is-style-plus li::before {
     background-image: url(../../img/unordered-list-plus.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    left: 0;
 }
 
-.article ul.article__list_minus li:before,
-ul.wp-block-list.is-style-minus li::before,
-ul.article__list_minus li:before {
-    display: block;
-    width: 16px;
-    height: 16px;
-    position: absolute;
+ul.wp-block-list.is-style-minus li::before {
     background-image: url(../../img/unordered-list-minus.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    top: 8px;
-    left: 0;
 }
 
-.article ul.article__list_check li:before,
-ul.wp-block-list.is-style-check li::before,
-.pane .article__list_check li:before,
-ul.article__list_check li:before {
-    display: block;
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    border-radius: 50%;
-    background-color: #313640;
-    background-image: url(../../img/unordered-list-check.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 11px;
-    top: 5px;
-    left: 0;
-    content: "";
-}
-
-.article ul.article__list_cross li:before,
 ul.wp-block-list.is-style-cross li::before {
-    display: block;
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    border-radius: 50%;
     background-image: url(../../img/unordered-list-cross.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 6px;
-    left: 0;
-}
-
-.article ol,
-ol.wp-block-list {
-    font-family: var(--font-family);
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 20px;
-    counter-reset: orderedListCounter;
-}
-
-.article ol > .ordered-list__item,
-.article ol > li,
-ol.wp-block-list > li,
-.article ul.article__list_check li,
-ul.wp-block-list.is-style-check li,
-ul.article__list_check li {
-    padding-left: calc(22px + 10px);
-}
-
-.article ol > .ordered-list__item,
-.article ol > li,
-ol.wp-block-list > li {
-    counter-increment: orderedListCounter;
-}
-
-.article ol.article__list_color_black li:before {
-    background-color: #696f7c;
 }
 
 .article__list_color_grey li::before {
     background-color: #e4e2e2;
     background-image: url(../../img/unordered-list-cross-grey.svg) !important;
-}
-
-.article ol.article__list_color_blue li:before {
-    background-color: #20a1e5;
-}
-
-.article ol li:before,
-ol.wp-block-list li::before {
-    content: "";
-}
-
-.article ol li:before,
-ol.wp-block-list li::before {
-    font-family: var(--font-family);
-    font-weight: 500;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    color: #fff;
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    font-size: 12px;
-    background-color: #313640;
-    left: 0;
-    top: 5px;
-    content: counter(orderedListCounter);
 }
 
 .article .question {
@@ -423,47 +312,12 @@ ol.wp-block-list li::before {
     margin-top: 15px !important;
 }
 
-.article ol li,
-.article ul li,
-ol.wp-block-list li,
-ul.wp-block-list li {
-    margin-bottom: 20px;
-    line-height: 1.75;
-    position: relative;
-    /*padding-left: calc(18px + 5px) !important;*/
-}
-
-.article ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.article ul > li {
-    padding-left: 23px !important;
-}
-
 .article ol li ul,
 .article ul li ul {
     list-style: none;
     padding: 0;
     margin: 0;
     margin-top: 15px !important;
-}
-
-.article ol li ul li,
-.article ul li ul li {
-    margin-bottom: 10px !important;
-    padding-left: 15px !important;
-}
-
-.article ol li ul li::before,
-.article ul li ul li::before {
-    background: #313640;
-    width: 5px !important;
-    height: 5px !important;
-    content: "" !important;
-    top: 15px !important;
 }
 
 .author {
@@ -648,15 +502,4 @@ h4.wp-block-heading {
 .article .slide-certificates {
     position: relative;
     margin-top: 0 !important;
-}
-
-.article > ul.article__list_check li,
-ul.wp-block-list.is-style-check li,
-ul.wp-block-list.is-style-cross li,
-ul.wp-block-list.is-style-roundplus li,
-ul.wp-block-list.is-style-roundminus li,
-.pane li,
-.article > ul.article__list_cross li,
-.article ol li {
-    padding-left: calc(18px + 15px) !important;
 }

@@ -1290,15 +1290,11 @@
 @media (max-width: 1600px) {
     .article p,
     p.text_section,
-    .article ul,
-    .list-plus,
-    .list-minus,
     .article > blockquote,
     .article > blockquote > p,
     p.text,
     .text,
     .pane b,
-    .article ol,
     .stages__text,
     .important,
     .portfolio-card__text,
@@ -1340,15 +1336,11 @@
     .article p,
     p.text_section,
     .section__text-b,
-    .article ul,
-    .list-plus,
-    .list-minus,
     .article > blockquote,
     .article > blockquote > p,
     p.text,
     .text,
     .pane b,
-    .article ol,
     .stages__text,
     .important,
     .portfolio-card__text,
@@ -3366,4 +3358,3 @@ p.article-block__text {
         background-size: cover;
     }
 }
-
