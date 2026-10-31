@@ -1,3 +1,11 @@
+.doctors-page {
+    @media screen and (max-width: 768px) {
+        .hat::after {
+            --gradient: none;
+        }
+    }
+}
+
 .doctor-profile {
     @media screen and (min-width: 768px) {
         .hat::after {

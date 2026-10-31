@@ -13,7 +13,7 @@ $h1 = get_field('h1');
         background-image: url(<?php echo get_template_directory_uri(); ?>/image/banner/banner-doctors.webp);
     }
 </style>
-<div class="page">
+<div class="page doctors-page">
     <header class="hat">
         <div class="banner">
             <div class="banner__content">
