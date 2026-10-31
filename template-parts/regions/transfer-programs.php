@@ -41,7 +41,7 @@ $allowed = ['strong' => [], 'br' => []];
 <div class="transfer-programs__scene">
     <div class="transfer-programs__stage">
         <?php foreach ($steps as $step) : ?>
-        <article class="transfer-programs__card transfer-programs__card--<?php echo esc_attr($step['num']); ?>">
+        <div class="transfer-programs__card transfer-programs__card--<?php echo esc_attr($step['num']); ?>">
             <div class="transfer-programs__gem">
                 <div class="transfer-programs__face">
                     <?php if ($step['photo'] === 'phone') : ?>
@@ -64,7 +64,7 @@ $allowed = ['strong' => [], 'br' => []];
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
         <?php endforeach; ?>
     </div>
 </div>

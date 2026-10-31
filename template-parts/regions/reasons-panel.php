@@ -41,11 +41,11 @@ $reasons = [
 <div class="grid-list reasons-panel-list">
     <?php foreach ($reasons as $reason) : ?>
     <div class="grid-list-item">
-        <article class="reasons-panel__card">
+        <div class="reasons-panel__card">
             <div class="reasons-panel__copy">
                 <div class="reasons-panel__copy-text">
-                    <h2 class="reasons-panel__lead"><?php echo wp_kses($reason['lead'], $allowed); ?></h2>
-                    <p class="reasons-panel__text"><?php echo esc_html($reason['text']); ?></p>
+                    <div class="reasons-panel__lead"><?php echo wp_kses($reason['lead'], $allowed); ?></div>
+                    <div class="reasons-panel__text"><?php echo esc_html($reason['text']); ?></div>
                 </div>
                 <?php if (!empty($reason['btn'])) :?>
                 <a class="reasons-panel__btn" href="<?php echo esc_url($reason['btn']['url']); ?>">
@@ -53,17 +53,17 @@ $reasons = [
                 </a>
                 <?php endif; ?>
             </div>
-            <p class="reasons-panel__index">
+            <div class="reasons-panel__index">
                 <?php echo esc_html($reason['index']); ?>
-            </p>
-            <p class="reasons-panel__label">
+            </div>
+            <div class="reasons-panel__label">
                 <?php foreach ($reason['label'] as $line) :
                     $tag = $line['tag'] === 'strong' ? 'strong' : 'span';
                     ?>
                 <<?php echo $tag; ?> class="reasons-panel__label-line"><?php echo esc_html($line['text']); ?></<?php echo $tag; ?>>
                     <?php endforeach; ?>
-            </p>
-        </article>
+            </div>
+        </div>
     </div>
     <?php endforeach; ?>
 </div>

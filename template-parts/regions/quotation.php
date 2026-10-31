@@ -5,14 +5,14 @@
         <div class="quotation__content">
             <img class="quotation__mark" src="<?php echo $directory; ?>img/quotation/quote.svg" alt="" width="54"
                 height="43">
-            <h2 class="quotation__title">
+            <div class="quotation__title">
                 <span class="quotation__title-lead">Цель всей моей жизни</span> — создать лучшую челюстно-лицевую
                 клинику в мире
-            </h2>
-            <p class="quotation__text">
+            </div>
+            <div class="quotation__text">
                 Филигранное <strong>планирование и комплексный подход</strong> к сохранению здоровья и качеству жизни
                 пациента
-            </p>
+            </div>
             <div class="quotation__footer">
                 <div class="quotation__author">
                     <p class="quotation__name">Левин Дмитрий Валерьевич</p>

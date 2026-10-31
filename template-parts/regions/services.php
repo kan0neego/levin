@@ -11,13 +11,13 @@
             </div>
             <div class="treatment-cards__body">
                 <div class="treatment-cards__text">
-                    <h3 class="treatment-cards__title">
+                    <div class="treatment-cards__title">
                         <span class="treatment-cards__title-lead">Лечение всех зубов</span>
                         за 1 день в седации
-                    </h3>
-                    <p class="treatment-cards__desc">
+                    </div>
+                    <div class="treatment-cards__desc">
                         Комплексное санирование всех зубов от гигиены до протезирования за 1 прием
-                    </p>
+                    </div>
                 </div>
                 <a class="treatment-cards__more" href="/lechenie-vseh-zubov-za-1-den-vo-sne/">
                     Подробнее
@@ -37,13 +37,13 @@
             </div>
             <div class="treatment-cards__body">
                 <div class="treatment-cards__text">
-                    <h3 class="treatment-cards__title">
+                    <div class="treatment-cards__title">
                         <span class="treatment-cards__title-lead">Имплантация зубов</span>
                         «во сне»
-                    </h3>
-                    <p class="treatment-cards__desc">
+                    </div>
+                    <div class="treatment-cards__desc">
                         Установка до 28 имплантатов за один 10-часовой операционный день
-                    </p>
+                    </div>
                 </div>
                 <a class="treatment-cards__more" href="/implantacija-zubov-vo-sne-pod-narkozom/">
                     Подробнее
@@ -63,13 +63,13 @@
             </div>
             <div class="treatment-cards__body">
                 <div class="treatment-cards__text">
-                    <h3 class="treatment-cards__title">
+                    <div class="treatment-cards__title">
                         <span class="treatment-cards__title-lead">Протезирование</span>
                         на имплантах
-                    </h3>
-                    <p class="treatment-cards__desc">
+                    </div>
+                    <div class="treatment-cards__desc">
                         Восстановление всех зубов на 4, 6 или 8 имплантатах за 1 прием «под ключ»
-                    </p>
+                    </div>
                 </div>
                 <a class="treatment-cards__more" href="/all-on-4/">
                     Подробнее

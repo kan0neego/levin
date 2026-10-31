@@ -19,7 +19,7 @@ $start_steps = [
 <div class="grid-list">
     <?php foreach ($start_steps as $step_index => $step) : ?>
     <div class="grid-list-item">
-        <article class="start-cards__card">
+        <div class="start-cards__card">
             <?php if ($step_index === 0) : ?>
             <div class="start-cards__media" aria-hidden="true">
                 <img class="start-cards__photo" src="<?php echo $directory; ?>img/start-cards/consult-bg.webp" alt=""
@@ -66,7 +66,7 @@ $start_steps = [
                     <?php endforeach; ?>
                 </ul>
             </div>
-        </article>
+        </div>
     </div>
     <?php endforeach; ?>
 </div>
