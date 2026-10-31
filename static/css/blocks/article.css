@@ -155,7 +155,6 @@ p.wp-block-paragraph.is-style-description {
 
 .article ul,
 ul.wp-block-list,
-.pane ul .block-price__content ul,
 .list-plus,
 .list-minus {
     font-size: 20px;
@@ -176,7 +175,6 @@ ul.wp-block-list,
 
 .article ul li,
 ul.wp-block-list li,
-.block-price__content ul li,
 .list-plus li,
 .list-minus li {
     margin-bottom: 8px;
@@ -187,7 +185,6 @@ ul.wp-block-list li,
 
 .article ul li:before,
 ul.wp-block-list li::before,
-.block-price__content ul li:before,
 .list-plus li::before,
 .list-minus li::before {
     content: "";
@@ -196,7 +193,6 @@ ul.wp-block-list li::before,
 
 .article ul li:last-child,
 ul.wp-block-list li:last-child,
-.block-price__content ul li:last-child,
 .list-plus li:last-child,
 .list-minus li:last-child {
     margin-bottom: 0;
@@ -206,7 +202,6 @@ ul.wp-block-list li:last-child,
 .article ul li:before,
 ul.wp-block-list li::before,
 .pane ul li:before,
-.block-price__content ul li:before,
 .list-plus li::before,
 .list-minus li::before {
     content: "";
@@ -303,8 +298,7 @@ ul.article__list_minus li:before {
 .article ul.article__list_check li:before,
 ul.wp-block-list.is-style-check li::before,
 .pane .article__list_check li:before,
-ul.article__list_check li:before,
-.block-price__content ul li:before {
+ul.article__list_check li:before {
     display: block;
     width: 22px;
     height: 22px;

@@ -1291,7 +1291,6 @@
     .article p,
     p.text_section,
     .article ul,
-    .block-price__content ul,
     .list-plus,
     .list-minus,
     .article > blockquote,
@@ -1342,7 +1341,6 @@
     p.text_section,
     .section__text-b,
     .article ul,
-    .block-price__content ul,
     .list-plus,
     .list-minus,
     .article > blockquote,
@@ -3369,7 +3367,3 @@ p.article-block__text {
     }
 }
 
-.block-price__content ul {
-    padding-left: 0;
-    list-style: none;
-}
