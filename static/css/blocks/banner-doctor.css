@@ -1,3 +1,15 @@
+.banner-doctor {
+    .subname {
+        display: block;
+
+        font-size: 44px;
+
+        @media screen and (max-width: 640px) {
+            font-size: 22px;
+        }
+    }
+}
+
 .banner-doctor__items {
     display: flex;
     justify-content: space-between;
@@ -37,16 +49,16 @@
 
     .banner-doctor__sub-title {
         line-height: normal;
-        font-size: 22px;
+        font-size: 18px;
         white-space: normal;
     }
 
     .banner-doctor__items {
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 5px;
 
         border-bottom: 0;
-        padding-bottom: 1rem;
+        padding-bottom: 16px;
     }
 
     .banner-doctor__items

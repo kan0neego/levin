@@ -845,11 +845,7 @@ label > input[type="checkbox"] {
 
 @media (max-width: 768px) {
     .hat:after {
-        background: linear-gradient(
-            180deg,
-            rgba(43, 47, 56, 0.08),
-            rgb(43, 47, 56) 86%
-        );
+        --gradient: 180deg, rgba(43, 47, 56, 0.08), rgb(43, 47, 56) 86%;
     }
 
     .hat__button {

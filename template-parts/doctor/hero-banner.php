@@ -1,15 +1,18 @@
 <?php
+$title = explode(' ', get_field('h1') ? get_field('h1') : get_the_title());
+$name = $title[0];
+$subname = implode(' ', array_slice($title, -2));
+
 $portfolio = isset($args['portfolio']) ? $args['portfolio'] : '';
 ?>
-<div class="banner">
+
+<div class="banner banner-doctor">
     <div class="banner__content">
         <?php levin_breadcrumbs(); ?>
 
         <h1 class="banner__name">
-            <?php
-            $title = get_field('h1') ? get_field('h1') : get_the_title();
-            echo '<span>' . str_replace(' ', '</span> ', $title);
-            ?>
+            <?php echo $name; ?>
+            <span class="subname"><?php echo $subname; ?></span>
         </h1>
         <div class="banner-doctor__items">
             <div class="banner-doctor__item">
