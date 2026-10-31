@@ -62,9 +62,9 @@
     --section-gutter: 90px;
     --section-gutter-mobile: 30px;
     --list-gutter: 24px;
-    --list-gutter-mobile: 24px;
-    --paragraph-gutter: 15px;
-    --paragraph-gutter-mobile: 12px;
+    --list-gutter-mobile: 14px;
+    --paragraph-gutter: 24px;
+    --paragraph-gutter-mobile: 14px;
     --list-heading-gutter: 30px;
     --list-heading-gutter-mobile: 24px;
     --paragraph-content-gutter: 30px;
