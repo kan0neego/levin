@@ -252,6 +252,10 @@ ul.wp-block-list[class*="is-style-"] li::before {
     position: absolute;
     left: 0;
     top: 5px;
+
+    @media screen and (max-width: 768px) {
+        top: 6px;
+    }
 }
 
 ul.wp-block-list[class*="is-style-"] li::before {
