@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node --test",
     "deploy": "fatssh deploy",
-    "sstatus": "fatssh status"
+    "status": "fatssh status"
   },
   "repository": {
     "type": "git",
