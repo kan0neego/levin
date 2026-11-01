@@ -1,21 +1,23 @@
 {
-    "name": "levin",
-    "version": "1.0.0",
-    "description": "",
-    "main": "",
-    "scripts": {
-        "test": "node --test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/kan0neego/levin.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "type": "commonjs",
-    "bugs": {
-        "url": "https://github.com/kan0neego/levin/issues"
-    },
-    "homepage": "https://github.com/kan0neego/levin#readme"
+  "name": "levin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "node --test",
+    "deploy": "fatssh deploy",
+    "sstatus": "fatssh status"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kan0neego/levin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kan0neego/levin/issues"
+  },
+  "homepage": "https://github.com/kan0neego/levin#readme"
 }

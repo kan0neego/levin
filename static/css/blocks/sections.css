@@ -2370,11 +2370,16 @@ li.allstat::before {
     margin-bottom: 20px;
 }
 
-.deal-card__list-container ul li {
-    color: var(--main-white) !important;
+.deal-card__list-container ul.wp-block-list[class*="is-style-"] li {
+    --i-size: 18px;
+    --gap: 10px;
+
+    margin-bottom: 12px;
+
+    color: var(--main-white);
 }
 
-.deal-card__list-container ul li::before {
+.deal-card__list-container ul.wp-block-list[class*="is-style-"] li:before {
     background-color: #20a1e5 !important;
 }
 
@@ -2504,16 +2509,22 @@ li.allstat::before {
     }
 
     .deal-card__image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         position: initial;
         margin-bottom: 16px;
     }
 
     .deal-card__image-container::before {
-        top: 0;
-        left: 0;
         width: 327px;
         height: 327px;
         background-image: url(../../static/img/nobel-ny-stock-bg-mob.svg);
+
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 

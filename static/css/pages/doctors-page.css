@@ -1734,16 +1734,14 @@ iframe .ytp-large-play-button {
     }
 }
 
-/* === hat-breadcrumbs (from modals-old) === */
-
 .hat {
-    --menu-height: 68px;
+    --menu-height: 80px;
     --header-height: 68px;
     --offset: calc(var(--menu-height) + var(--header-height));
 
     box-sizing: border-box;
 
-    padding-top: 40px;
+    padding-top: 112px;
 
     min-height: 75dvh;
     max-height: 1046px;
@@ -1755,7 +1753,7 @@ iframe .ytp-large-play-button {
 
     @media screen and (max-width: 767px) {
         padding-bottom: 32px;
-        padding-top: 20px;
+        padding-top: calc(var(--header-height) + 20px);
     }
 
     @media screen and (max-width: 640px) {
