@@ -31,7 +31,7 @@ $h1 = get_field('h1');
             <div class="banner__content">
                 <?php levin_breadcrumbs(); ?>
 
-                <h1 class="banner__name"><?= $h1 ? $h1 : get_the_title(); ?></h1>
+                <h1 class="banner__name"><?= $h1 ? $h1 : get_the_title() ?></h1>
 
                 <?php if (get_field('subtitle')): ?>
                 <b><?php echo get_field('subtitle'); ?></b>
@@ -275,7 +275,7 @@ $h1 = get_field('h1');
                     черта
                     Центра и «первая ласточка» в становлении клиники именно такой, какой она известна сегодня.
                 </div>
-                <ul class="list">
+                <ul class="wp-block-list">
                     <li>Требования к специалистам нашего Центра максимально
                         строгие — опыт от 10 лет, подтвержденные мануальные навыки</li>
                     <li>Теоретические знания, в том числе по смежным направлениям</li>
@@ -773,5 +773,5 @@ $h1 = get_field('h1');
     </div>
 </article>
 
-<?php
-get_footer();
+<?php get_footer();
+
