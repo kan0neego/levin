@@ -5,7 +5,12 @@
     padding-left: 46px;
 
     border-radius: 10px;
-    background: radial-gradient(130.88% 145.68% at -15.44% 131.09%, rgb(12, 69, 120) 0%, rgb(0, 25, 47) 82.27385878562927%, rgb(1, 24, 45) 100%);
+    background: radial-gradient(
+        130.88% 145.68% at -15.44% 131.09%,
+        rgb(12, 69, 120) 0%,
+        rgb(0, 25, 47) 82.27385878562927%,
+        rgb(1, 24, 45) 100%
+    );
 
     position: relative;
     overflow: hidden;
@@ -14,7 +19,7 @@
 .blog-card::before {
     width: 100%;
     height: 100%;
-    content: '';
+    content: "";
 
     background-image: url(../../img/blog-card-bg.png);
     pointer-events: none;
@@ -30,9 +35,14 @@
 .blog-card::after {
     width: 100%;
     height: 140px;
-    content: '';
+    content: "";
 
-    background: linear-gradient(180deg, rgba(2, 25, 46, 0) 2.55%, rgba(2, 25, 46, 0.61) 64.11%, #02192e 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(2, 25, 46, 0) 2.55%,
+        rgba(2, 25, 46, 0.61) 64.11%,
+        #02192e 100%
+    );
 
     position: absolute;
     left: 0;
@@ -65,21 +75,25 @@
     position: relative;
 }
 
-.blog-card__header>span {
+.blog-card__header > span {
     font-weight: 500;
 }
 
-.blog-card__content>*:not(:last-child) {
+.blog-card__content > *:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.blog-card__content>p {
+.blog-card__content > p {
     max-width: 530px;
 
     font-size: 28px;
     font-weight: 300;
     line-height: 150%;
     letter-spacing: 0.01em;
+}
+
+.blog-card__content > p,
+.blog-card__content > .wp-block-list {
     color: #fff;
 }
 
@@ -128,7 +142,6 @@
         position: relative;
     }
 
-
     .blog-card::after {
         display: none;
     }
@@ -170,25 +183,29 @@
 
     .blog-card__image-container::before {
         display: block;
-        content: '';
+        content: "";
 
         width: 100%;
         height: 160px;
 
-        background: linear-gradient(180deg, rgba(2, 25, 46, 0) 2.55%, rgba(2, 25, 46, 0.61) 64.11%, #02192e 100%);
+        background: linear-gradient(
+            180deg,
+            rgba(2, 25, 46, 0) 2.55%,
+            rgba(2, 25, 46, 0.61) 64.11%,
+            #02192e 100%
+        );
 
         position: absolute;
         bottom: 0;
         z-index: 20;
     }
 
-
     .blog-card__button-container {
         width: 100%;
         max-width: unset;
     }
 
-    .blog-card__content>p {
+    .blog-card__content > p {
         font-size: 24px !important;
         line-height: 175% !important;
     }
@@ -204,7 +221,7 @@
         font-size: 32px;
     }
 
-    .blog-card__content>*:not(:last-child) {
+    .blog-card__content > *:not(:last-child) {
         margin-bottom: 15px;
     }
 
