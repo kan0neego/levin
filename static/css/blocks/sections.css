@@ -2377,6 +2377,14 @@ li.allstat::before {
     margin-bottom: 12px;
 
     color: var(--main-white);
+
+    &::before {
+        top: 6px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 8px;
+    }
 }
 
 .deal-card__list-container ul.wp-block-list[class*="is-style-"] li:before {

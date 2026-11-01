@@ -184,7 +184,8 @@ ol.wp-block-list li {
     position: relative;
 
     @media screen and (max-width: 768px) {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
+
         font-size: 18px;
     }
 }
@@ -252,10 +253,6 @@ ul.wp-block-list[class*="is-style-"] li::before {
     position: absolute;
     left: 0;
     top: 5px;
-
-    @media screen and (max-width: 768px) {
-        top: 6px;
-    }
 }
 
 ul.wp-block-list[class*="is-style-"] li::before {
