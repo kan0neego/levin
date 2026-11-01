@@ -815,6 +815,16 @@ a.prices__heading:hover {
     flex-direction: column;
     align-items: flex-end;
     justify-content: end;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        justify-content: flex-start;
+        align-items: baseline;
+        margin-top: 20px;
+    }
 }
 
 .price-price i {
@@ -861,12 +871,12 @@ a.prices__heading:hover {
 
 .price-price > span:first-child {
     font-family: var(--third-family);
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 100%;
     text-align: right;
     letter-spacing: -0.01em;
+
     color: #2a2c2f;
     margin-bottom: 5px;
 }
